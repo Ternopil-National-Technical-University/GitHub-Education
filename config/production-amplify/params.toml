@@ -1,0 +1,7 @@
+# Amplify-specific parameters
+# These are only used when building with -e amplify
+
+gtm = ""          # Google Tag Manager ID (set via environment variable)
+year = 2026       # Current year
+cookie_consent = true  # Enable cookie consent banner
+deployed_git_tag = "0.0.0"  # Git tag of the deployed version (set via environment variable)

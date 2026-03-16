@@ -1,0 +1,65 @@
+################################### English language #####################################
+[en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+
+[en.params]
+baseURL = "/"
+home = "Home"
+keywords = ["GPM Services","", "", "", "", "", "", "", "", "", ""]
+
+# contact info
+address = "Corner of Oujda Avenue and Tan-Tan Residence, Perla Offices, 12th Floor, Office No. 60, Tangier"
+mobile = "+212 539 945 952"
+email = "info@gp-maroc.ma"
+
+# cookie consent content
+consent_manage = 'Manage preferences'
+consent_deny = 'Deny'
+consent_allow = 'Allow'
+consent_outer_message_1 = 'We would like to use '
+consent_inner_message = 'third party code'
+consent_outer_message_2 = ' to improve the functionality of this website.'
+consent_description = 'This code gives us insight into the number of people that visit our website, where they are from and what they are clicking on.'
+consent_allow_all = 'Allow all'
+consent_save_preferences = 'Save preferences'
+
+# footer content
+footer_content = "GPM Services - Operations and Maintenance (O&M) which includes panel cleaning, electrical inspections, inverter maintenance, performance monitoring, and fault repair. <br><br>Regular cleaning restores performance and extends asset life, particularly in arid environments."
+copyright = "Copyright © GPM Services, %s-year All rights reserved"
+
+
+################################### French language #####################################
+[fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 2
+
+[fr.params]
+baseURL = "/fr/"
+home = "Accueil"
+keywords = ["GPM Services","", "", "", "", "", "", "", "", "", ""]
+
+# contact info
+address = "Angle AV Oujda Et TanTan Res, Perla Oficinas 12 Etage Bureau N 60 Tanger"
+mobile = "+212 539 945 952"
+email = "info@gp-maroc.ma"
+
+# cookie consent content
+consent_manage = 'Gérer les préférences'
+consent_deny = 'Refuser'
+consent_allow = 'Autoriser'
+consent_outer_message_1 = 'Nous souhaitons utiliser '
+consent_inner_message = 'du code tiers'
+consent_outer_message_2 = ' pour améliorer le fonctionnement de ce site.'
+consent_description = "Ce code nous donne un aperçu du nombre de personnes qui visitent notre site, d'où elles viennent et sur quoi elles cliquent."
+consent_allow_all = 'Tout autoriser'
+consent_save_preferences = 'Enregistrer'
+
+# footer content
+footer_content = "GPM Services - Les opérations et la maintenance (O&M) comprennent le nettoyage des panneaux, les inspections électriques, la maintenance des onduleurs, la surveillance des performances et la réparation des pannes. <br><br>Un nettoyage régulier permet de rétablir les performances et de prolonger la durée de vie des équipements, notamment en milieu aride."
+# copyright
+copyright = "Copyright © GPM Services, %s-year Tous droits réservés"

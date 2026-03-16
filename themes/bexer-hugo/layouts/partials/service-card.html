@@ -1,0 +1,14 @@
+<div class="card border-0 rounded-0 box-shadow position-relative h-100 d-flex flex-column">
+  {{ $Image := or (fileExists (add `static/` (string (.Params.Image_webp)))) (fileExists (add `static/` (string (.Params.Image)))) }}
+  {{ if $Image }}
+  <img loading="lazy" class="card-img-top rounded-0 flex-shrink-0" src="{{ .Params.Image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .Params.Image | absURL }}'" alt="{{ .Title }}">
+  {{ end }}
+  {{ with .Params.Icon}}<div class="card-icon position-absolute" style="top: 0; left: 0; z-index: 10;"><i class="{{. }}"></i></div>{{ end }}
+  <div class="card-body position-relative flex-grow-1 d-flex flex-column">
+    <h4 class="card-title"><a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a></h4>
+    <p class="card-text">{{ .Summary }}</p>
+    <div class="mt-auto">
+      <a href="{{ .Permalink }}" class="btn btn-secondary btn-arrow" aria-label="{{ .Title }}">{{ i18n "read_more" }}</a>
+    </div>
+  </div>
+</div>

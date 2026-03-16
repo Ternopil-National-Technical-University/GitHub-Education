@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  hugo:
+    image: ghcr.io/gohugoio/hugo:v0.153.4
+    container_name: github-education-tntu
+    working_dir: /project
+    command: server --bind 0.0.0.0 --port 1313 --logLevel debug
+    volumes:
+      - .:/project
+      - hugo_cache:/cache
+    environment:
+      - HUGO_CACHEDIR=/cache
+    ports:
+      - "1313:1313"
+    restart: unless-stopped
+    user: "${UID:-1000}:${GID:-1000}"
+
+volumes:
+  hugo_cache:
+

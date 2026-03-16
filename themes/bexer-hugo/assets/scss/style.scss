@@ -1,0 +1,42 @@
+// Color Variables
+{{ with site.Params.variables }}
+$primary-color: {{.primary_color | default "#86c33a"}};
+$primary-light-color: {{.primary_light_color | default "#f5faf6"}};
+$secondary-color: {{.secondary_color | default "#252d39"}};
+$body-color: {{.body_color | default "#fff"}};
+$text-color: {{.text_color | default "#818385"}};
+$text-color-dark: {{.text_color_dark | default "#172231"}};
+$text-color-light: {{.text_color_light | default "#959595"}};
+$border-color: {{.border_color | default "#e7e7e7"}};
+$black: {{.black | default "#000"}};
+$white: {{.white | default "#fff"}};
+$light: {{.light | default "#f5f6fa"}};
+
+
+// Font Variables
+$primary-font: '{{ replaceRE ":[ital,]*wght@[0-9,;]+" "" .primary_font | default "Lato"}}', {{.primary_font_type | default "sans-serif"}};
+$secondary-font: '{{ replaceRE ":[ital,]*wght@[0-9,;]+" "" .secondary_font | default "Lato"}}', {{.secondary_font_type | default "sans-serif"}};
+$icon-font: '{{.icon_font | default "Font Awesome 5 Free"}}';
+{{ end }}
+
+@import 'typography';
+
+@import 'mixins';
+
+@import 'buttons';
+
+@import 'common';
+
+@import 'templates/navigation';
+
+@import 'templates/slider';
+
+@import 'templates/homepage';
+
+@import 'templates/cta';
+
+@import 'templates/team';
+
+@import 'templates/blog';
+
+@import 'custom';

@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ if .Params.philosophy.enable }}
+{{ with .Params.philosophy }}
+{{ "<!-- philosophy -->" | safeHTML }}
+<section class="section bg-gray position-relative">
+  <div class="container position-relative zindex-1">
+    <div class="row">
+      {{ $.Scratch.Set "counter" 0 }}
+      {{ range $index, $element := .philosophy_item }}
+      {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+      {{ "<!-- philosophy item -->" | safeHTML }}
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h3><span class="text-primary">{{if lt $index 9}}0{{end}}{{$.Scratch.Get `counter`}}.</span> {{ .title }}</h3>
+        <p>{{ .content | markdownify }}</p>
+        <ul class="list-styled style-circle">
+          {{ range .bullet_point }}
+          <li class="mb-3">{{ . | markdownify }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img loading="lazy" class="img-fluid philosophy-bg-shape" src="{{ `images/backgrounds/about-page-bg.webp` | relURL }}" onerror="this.onerror=null;this.src='{{ `images/backgrounds/about-page-bg.png` | relURL }}'" alt="shape">
+  <img loading="lazy" class="img-fluid about-bg-shape" src="{{ `images/backgrounds/about-us-3-bg.webp` | relURL }}" onerror="this.onerror=null;this.src='{{ `images/backgrounds/about-us-3-bg.png` | relURL }}'" alt="shape">
+</section>
+{{ "<!-- /philosophy -->" | safeHTML }}
+{{ end }}
+{{ end }}
+
+{{ if .Params.about.enable }}
+{{ with site.GetPage "/" }}
+{{ "<!-- about us -->" | safeHTML }}
+<section class="section">
+  {{ with .Params.about }}
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-md-5 bg-contain" data-background="{{ .bg_image | absURL }}">
+        {{ "<!-- about us image -->" | safeHTML }}
+        <img loading="lazy" class="img-fluid w-100" src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{.image | absURL }}'" alt="About Image">
+      </div>
+      <div class="col-md-6">
+        <div class="section-title-border"></div>
+        <p class="section-title-sm h6">{{ .subtitle | markdownify }}</p>
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <p class="mb-5">{{ .content | markdownify }}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | absLangURL }}" class="btn btn-primary hover-ripple">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</section>
+{{ "<!-- /about us -->" | safeHTML }}
+{{ end }}
+{{ end }}
+
+{{ if .Params.service.enable }}
+{{ partial "service-section.html" . }}
+{{ end }}
+
+{{ if .Params.team.enable }}
+{{ partial "team-section.html" . }}
+{{ end }}
+
+{{ end }}

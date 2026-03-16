@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ "<!-- service details -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <aside class="col-lg-4">
+        {{ "<!-- service list -->" | safeHTML }}
+        <div class="bg-white px-4 py-5 box-shadow mb-5">
+          <h4 class="mb-4">{{i18n "our_services"}}</h4>
+          <ul class="list-styled style-circle service-list">
+            {{ range (where site.RegularPages "Section" "service") }}
+            <li class="border-bottom border-color"><a href="{{ .Permalink }}" class="text-color d-block pb-3 mt-3 text-decoration-none">{{ .Title }}</a></li>
+            {{ end }}
+
+            <script>
+              (function () {
+                const links = document.getElementsByTagName('a')
+                const currentUrl = location.href
+                for (const link of links) {
+                  if (link.href === currentUrl) {
+                    link.classList.add('active')
+                  }
+                }
+              }())
+            </script>
+
+          </ul>
+        </div>
+        {{ partial "quick-contact.html" . }}
+      </aside>
+      <div class="col-lg-8">
+        <div class="d-flex justify-content-center mb-3">
+          <img loading="lazy" src="{{ .Params.logo | absURL }}"
+            alt="{{.Title}}" class="img-fluid mb-5" style="width:{{.Params.logo_width}} !important">
+        </div>
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /service details -->" | safeHTML }}
+
+{{ end }}

@@ -1,0 +1,165 @@
+// hide filtr-container until initialize
+.filtr-container {
+  opacity: 0;
+}
+
+// service active class
+.service-list {
+  .active {
+    font-weight: 700;
+    color: $primary-color;
+  }
+  a {
+    padding-left: 6px;
+  }
+}
+
+.slider-title-height {
+  min-height: 168px;
+
+  @media(max-width: 767px){
+    min-height: 114px;
+  }
+}
+
+.slider-text {
+  color: $text-color-dark;
+  min-height: 96px;
+
+  @media(max-width: 767px){
+    min-height: 120px;
+  }
+}
+
+.about-img-rounded-shadow {
+  border-radius: 16px;
+  box-shadow: 9px 7px 16px rgba(200, 200, 200, 0.3);
+}
+
+/* Smooth scroll with offset for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Modern approach using scroll-margin-top */
+section[id] {
+  //scroll-margin-top: 75px;
+}
+
+.partner-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px !important;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.partner-logo {
+  max-height: 80px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+}
+
+.bg-black-30 {
+  background-color: rgba(0, 0, 0, .3);
+}
+
+/* Hero overlay for better text contrast */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 21, 21, 0.10);
+  z-index: 1;
+}
+
+/* Ensure content is above overlay */
+.hero-slider-item .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero slider text styling */
+.hero-slider .text-white,
+.hero-slider h1,
+.hero-slider h4,
+.hero-slider p {
+  color: #ffffff !important;
+}
+
+.hero-slider .letter-spacing {
+  letter-spacing: 2px;
+}
+
+/* Remove text shadow since we have overlay now */
+.hero-slider-item .col-lg-7 {
+  text-shadow: none;
+}
+
+/* Hero slider button styling - white text and white border */
+.hero-slider .btn-primary-outline {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+.hero-slider .btn-primary-outline:hover {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.rounded-05 {
+  border-radius: 0.5rem;
+}
+
+.container-project {
+
+  @media(min-width: 1200px){
+    max-width: 1000px;
+  }
+}
+
+/* Form Messages */
+#form-messages {
+  margin-bottom: 0;
+  margin-left: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: 500;
+
+  /* Mobile margin-top */
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+#form-messages.alert-success {
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+#form-messages.alert-danger {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+/* Button loading state */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Form animation for smooth appearance */
+#form-messages {
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,86 @@
+- id: read_more
+  translation: Lire la suite
+
+- id: address
+  translation: Notre adresse
+
+- id: phone
+  translation: Numéro de téléphone
+
+- id: email
+  translation: Envoyez-nous un message
+
+- id: contact_form
+  translation: Formulaire de contact
+
+- id: contact_form_send
+  translation: Merci pour votre message
+
+- id: send
+  translation: envoyer le message
+
+- id: follow
+  translation: SUIVEZ-NOUS SUR
+
+- id: footer_menu
+  translation: Entité Principale
+
+- id: contact_info
+  translation: Informations de contact
+
+- id: subscribe_newsletter
+  translation: Abonnez-vous à la newsletter
+
+- id: subscribe
+  translation: S'abonner
+
+- id: connect_with_us
+  translation: Connectez-vous avec nous
+
+- id: call_now
+  translation: Appelez maintenant
+
+- id: search_placeholder
+  translation: Tapez et appuyez sur Entrée...
+
+- id: quick_contact
+  translation: Contact rapide
+
+- id: latest_article
+  translation: Dernier article
+
+- id: category
+  translation: Catégorie
+
+- id: tags
+  translation: Étiquettes
+
+- id: all
+  translation: TOUT
+
+- id: client
+  translation: client
+
+- id: date
+  translation: date
+
+- id: status
+  translation: statut
+
+- id: our_services
+  translation: Nos Services
+
+- id: get_a_quote
+  translation: Obtenir un devis
+
+- id: section_blog
+  translation: Blog
+
+- id: section_project
+  translation: Projets
+
+- id: section_service
+  translation: Services
+
+- id: section_team
+  translation: Équipe

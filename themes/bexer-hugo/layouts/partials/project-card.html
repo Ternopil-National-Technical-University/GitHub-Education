@@ -1,0 +1,17 @@
+<div class="project-item mb-5">
+  <div class="position-relative mb-4 overflow-hidden">
+    <a href="{{ .Permalink }}">
+      <img loading="lazy" src="{{ .Params.Image_webp | absURL }}"
+           onerror="this.onerror=null;this.src='{{.Params.Image | absURL }}'" alt="Image of  {{ .Title }}"
+           class="img-fluid w-100">
+    </a>
+<!--    <div class="hover-overlay">-->
+<!--      <a href="{{ .Params.Image | absURL }}" class="venobox"><i class="uni-plus"></i></a>-->
+<!--    </div>-->
+  </div>
+  {{ "<!-- project-info --> " | safeHTML }}
+  <div class="px-4">
+    <h6 class="text-primary">{{ .Params.Category }}</h6>
+    <h4><a class="text-dark" href="{{ .Permalink }}" aria-label="project image full view">{{ .Title }}</a></h4>
+  </div>
+</div>

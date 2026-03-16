@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<!-- checking blog -->
+{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
+
+{{ "<!-- blog details -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        {{ "<!-- post thumb -->" | safeHTML }}
+        <div class="position-relative mb-5">
+          <img loading="lazy" src="{{ .Params.Image_webp | absURL }}"  onerror="this.onerror=null;this.src='{{.Params.Image | absURL }}'" alt="post thumb" class="img-fluid w-100">
+          {{ with .Params.Categories }}{{range first 1 .}} <div class="card-type">{{ . | title }}</div>{{ end }}{{ end }}
+        </div>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">{{ .Params.Author }}</strong>/ on <strong class="text-dark">{{ .PublishDate.Format "02 Jan 2006" }}</strong></div>
+        <h2>{{ .Title }}</h2>
+        <div class="content">
+          {{ .Content }}
+        </div>
+        {{ "<!-- tags -->" | safeHTML }}
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            {{ range .Params.Tags }}
+            <li class="list-inline-item"><a class="text-color" href="{{ `tags/` | absURL }}{{ . | lower }}">{{ . }}</a>,</li>
+            {{ end }}
+          </ul>
+        </div>
+        <!-- comments -->
+        {{ if site.Config.Services.Disqus.Shortname }}
+        <div class="mt-5">
+          {{ template "_internal/disqus.html" . }}
+        </div>
+        {{ end }}
+      </div>
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /blog details -->" | safeHTML }}
+
+<!-- regular page -->
+{{ else }}
+{{ .Render "default" }}
+{{ end }}
+<!-- /regular page -->
+
+{{ end }}

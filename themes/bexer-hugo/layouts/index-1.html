@@ -1,0 +1,320 @@
+{{ define "main" }}
+
+{{ with .Params.hero_slider }}
+{{ if .enable }}
+{{ "<!-- slider -->" | safeHTML }}
+<section>
+  <h1 class="d-none">{{ site.Title }}</h1>
+  <div class="hero-slider">
+    {{ range .slider_item }}
+    {{ "<!-- slider item -->" | safeHTML }}
+    <div class="hero-slider-item bg-cover hero-section" style="background-image: url('{{ .bg_image_webp | absURL }}');">
+      <!-- this image is for trigger this section fallback background image -->
+      <img class="d-none" src="{{ .bg_image_webp | absURL }}"
+        onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .bg_image | absURL }})'"
+        alt="Slider image for {{ site.Title }}">
+
+      <!-- Semi-transparent gray overlay -->
+      <div class="hero-overlay"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10" data-duration-in=".3" data-animation-in="{{ .animation }}" data-delay-in=".1">
+            <h4 class="mb-4 letter-spacing text-white">{{ .subtitle | markdownify }}</h4>
+            <div class="slider-title-height">
+              <p class="slider-h1 text-white">{{ .title | markdownify }}</p>
+            </div>
+            <p class="col-lg-8 col-10 slider-text text-white mb-4 mt-4 p-0">{{ .content | markdownify }}</p>
+            {{ if .button.enable }}
+            <a href="{{ .button.link }}" class="btn btn-primary-outline" data-duration-in=".3"
+              data-animation-in="{{ .button.animation }}" data-delay-in=".4">{{ .button.label }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ "<!-- /slider -->" | safeHTML }}
+{{ end }}
+{{ end }}
+
+{{ with .Params.banner_feature}}
+{{ if .enable}}
+{{ "<!-- banner feature -->" | safeHTML }}
+<section class="banner-feature-wrapper">
+  <div class="container">
+    <div class="row justify-content-center">
+      {{ range .feature_item }}
+      {{ "<!-- feature item -->" | safeHTML }}
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="bg-white py-5 px-4 text-center box-shadow banner-feature">
+          {{ with .icon }}
+          <div class="icon-bg mb-4 water-wave">
+            <i class="{{ . }} icon text-primary"></i>
+          </div>
+          {{ end }}
+          <h4 class="mb-4">{{ .name | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /banner feature -->" | safeHTML }}
+{{ end }}
+{{ end }}
+
+{{ if .Params.about.enable }}
+{{ "<!-- about us -->" | safeHTML }}
+<section class="section pt-0" id="about">
+  {{ partial "about-section.html" . }}
+</section>
+{{ "<!-- /about us -->" | safeHTML }}
+{{ end }}
+
+{{ with .Params.funfacts }}
+{{ if .enable }}
+{{ "<!-- funfacts -->" | safeHTML }}
+<section class="funfacts">
+  <div class="container">
+    <div class="row bg-secondary p-5">
+      {{ range .funfacts_item }}
+      {{ "<!-- funfacts item -->" | safeHTML }}
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="d-flex align-items-center">
+          <i class="{{ .icon }} icon-lg mr-3 text-primary"></i>
+          <div>
+            <h3 class="text-white mb-0"><span class="count" data-count="{{ .count }}">0</span>+</h3>
+            <span class="text-white">{{ .name }}</span>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /funfacts -->" | safeHTML }}
+{{ end }}
+{{ end }}
+
+{{ with .Params.feature }}
+{{ if .enable }}
+{{ "<!-- feature -->" | safeHTML }}
+<section class="section" id="manufacturing">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-4 offset-lg-2 order-lg-1 order-2">
+        <div class="section-title-border"></div>
+        <h4 class="section-title-sm">{{ .subtitle | markdownify }}</h4>
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <p class="mb-5">{{ .content | markdownify }}</p>
+        <ul class="list-unstyled">
+          {{ range .feature_item }}
+          {{ "<!-- feature item -->" | safeHTML }}
+          <li class="d-flex flex-column flex-sm-row align-items-center align-items-sm-center mb-5">
+            <div class="text-center mb-3 mb-sm-0 mr-sm-4">
+              <div class="icon-bg water-wave"><i class="{{ .icon }} icon text-primary"></i></div>
+            </div>
+            <div class="text-sm-left">
+              <h4>{{ .name | markdownify }}</h4>
+              {{ .content | markdownify }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col-lg-5 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0">
+        <div class="feature-img-bg box-shadow">
+          <img loading="lazy" class="img-fluid w-100" src="{{ .image_webp | absURL }}"
+            onerror="this.src='{{ .image | absURL }}'" alt="feature-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ "<!-- /feature -->" | safeHTML }}
+{{ end }}
+
+{{ if .Params.service.enable }}
+{{ partial "service-section-index.html" . }}
+{{ end }}
+
+{{ if .Params.team.enable }}
+{{ partial "team-section.html" . }}
+{{ end }}
+
+{{ "<!-- case study -->" | safeHTML }}
+{{ if .Params.project.enable}}
+<section class="section pt-0">
+  <div class="pb-4 pt-5 bg-green-white">
+    <div class="container">
+      <div class="row">
+        {{ with site.GetPage (string .Params.project.section) }}
+        <div class="col-md-8">
+          <div class="section-title-border"></div>
+          <h4 class="section-title-sm">{{ .Params.title | markdownify }}</h4>
+          <h2>{{ .Params.subtitle | markdownify }}</h2>
+        </div>
+        {{end}}
+        {{ with .Params.project }}
+        {{ if .button.enable }}
+        {{ with .button }}
+        <div class="col-md-4 text-right align-self-end d-md-block d-none">
+          <a href="{{ .link | absLangURL }}" class="btn btn-primary mb-3 hover-ripple">{{ .label }}</a>
+        </div>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid px-0">
+    <div class="row no-gutters">
+      {{$show_item:= .Params.project.show_item}}
+      {{ with site.GetPage (string .Params.project.section) }}
+      {{ range first ($show_item | default 4) .Data.Pages }}
+      {{ "<!-- project-item -->" | safeHTML }}
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+      {{ partial "project-card.html" . }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{end}}
+{{ "<!-- /case study -->" | safeHTML }}
+
+{{ if .Params.cta.enable }}
+{{ with .Params.cta }}
+{{ "<!-- call to action -->" | safeHTML }}
+<section class="section overlay-secondary bg-fixed" style="background-image: url('{{ .bg_image_webp | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-10 col-11 text-center mx-auto">
+        <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | absLangURL }}" class="btn btn-primary hover-ripple">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /call to action -->" | safeHTML }}
+{{ end }}
+{{ end }}
+
+{{ if .Params.testimonial.enable }}
+{{ partial "testimonial.html" . }}
+{{ end }}
+
+{{ if .Params.partners.enable }}
+{{ partial "partners.html" . }}
+{{ end }}
+
+{{ "<!-- blog -->" | safeHTML }}
+{{$show_item:= .Params.service.show_item}}
+{{ if .Params.blog.enable }}
+{{ with site.GetPage (string .Params.blog.section) }}
+<section class="section bg-gray-white position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title-border mx-auto"></div>
+        <h4 class="section-title-sm">{{ .Params.subtitle | markdownify }}</h4>
+        <h2 class="section-title">{{ .Params.title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      {{ "<!-- blog post -->" | safeHTML }}
+      {{ range first ($show_item | default 3) .Data.Pages }}
+      <article class="col-lg-4 col-sm-6 mb-lg-0 mb-4 zindex-1">
+        {{ .Render "post" }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+  {{ "<!-- background shapes -->" | safeHTML }}
+  <img loading="lazy" class="img-fluid blog-shape-left" src="{{`images/backgrounds/blog-bg-left.webp` | relURL }}"
+    alt="" onerror="this.src='{{`images/backgrounds/blog-bg-left.png` | relURL }}'">
+  <img loading="lazy" class="img-fluid blog-shape-right" src="{{`images/backgrounds/blog-bg-right.webp` | relURL }}"
+    alt="" onerror="this.src='{{`images/backgrounds/blog-bg-right.png` | relURL }}'">
+</section>
+{{ end }}
+{{ end }}
+{{ "<!-- /blog -->" | safeHTML }}
+
+{{ with .Params.contact }}
+{{ if .enable }}
+{{ "<!-- contact form and map -->" | safeHTML }}
+<section id="contacts" class="section">
+  <div class="container">
+    <div class="row flex-wrap-reverse">
+
+      {{ with site.Params.gmap }}
+      {{ if .enable }}
+      <div class="col-md-5 mb-5 mb-md-0">
+        <div id="map" class="gmap" data-latitude="{{.map_latitude}}" data-longitude="{{.map_longitude}}" data-marker="{{.map_marker | absURL}}" data-marker-name="{{.map_marker_name}}"></div>
+      </div>
+      {{ else }}
+      <div class="col-md-5 mt-5 mt-md-0">
+        {{ "<!-- contacts image -->" | safeHTML }}
+        <img loading="lazy" class="img-fluid w-100 mr-md-4" src="{{$.Params.contact.image | absURL }}" onerror="this.onerror=null;this.src='{{$.Params.contact.image | absURL }}'" alt="Contacts Image">
+      </div>
+      {{ end }}
+
+
+      <div class="col-md-7">
+        <h3 class="section-title text-center text-md-left">{{ i18n "contact_form" }}</h3>
+        <script>let submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {
+          document.getElementById('form-messages').style.display = 'inline-block';
+          document.getElementById('contact-form').reset();
+          setTimeout(function() {
+            document.getElementById('form-messages').style.display = 'none';
+          }, 5000);
+        }"></iframe>
+
+        <form id="contact-form" action="{{ site.Params.contact_form_action }}" method="POST" class="row" target="hidden_iframe"  onsubmit="submitted=true">
+          {{ range $.Params.contact.form_fields }}
+          {{ "<!-- contact item -->" | safeHTML }}
+          {{ if eq .type "textarea" }}
+          <div class="col-12">
+            <textarea name="{{ .name }}" id="{{ .id }}" class="form-control border-0 rounded-0 box-shadow mb-5 py-3 px-4"
+                      placeholder="{{ .placeholder }}" maxlength="{{ .maxlength }}"
+                      {{ if .required }} required {{ end }}></textarea>
+          </div>
+          {{ else if eq .type "input" }}
+          <div class="col-md-6" {{ if .hidden }} style="display:none" {{ end }}>
+            <input type="{{ .input_type | default "text" }}" name="{{ .name }}" id="{{ .id }}" class="form-control border-0 rounded-0 box-shadow mb-4"
+            placeholder="{{ .placeholder }}" maxlength="{{ .maxlength }}"
+            {{ if .required }} required {{ end }}>
+          </div>
+          {{ else if eq .id "language" }}
+          <select class="form-input" name="{{ .name }}" id="{{ .id }}" {{ if .hidden }} style="display:none" {{ end }}>
+            <option class="" value="{{ .default }}" selected>{{ .default }}</option>
+          </select>
+          {{ end }}
+          {{ end }}
+          <div class="col-12 text-center text-md-left d-flex align-items-center flex-column flex-md-row">
+            <button type="submit" value="send" class="btn btn-primary hover-ripple mb-3 mb-md-0">{{ i18n "send" }}</button>
+            <div id="form-messages" style="display: none;" class="alert alert-success ml-md-3" role="alert">{{ i18n "contact_form_send" }}</div>
+          </div>
+        </form>
+
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ "<!-- /contact form and map -->" | safeHTML }}
+
+{{ end }}
