@@ -8,8 +8,8 @@ hero_slider:
       title : "Освітні технології <br>майбутнього"
       content : "Розвиваємо світові освітні екосистеми - GitHub Campus, GitHub Copilot, та програмна інженерія - 
       присвячені інноваційному навчанню та стратегічному розвитку."
-      bg_image_webp : "images/slider/image44.jpeg"
-      bg_image : "images/slider/image44.jpeg"
+      bg_image_webp : "images/slider/schools-GitHub-Education.webp"
+      bg_image : "images/slider/schools-GitHub-Education.jpeg"
       animation : "fadeInUp" # animation select from : https://daneden.github.io/animate.css/
       button:
         enable : true
@@ -21,8 +21,8 @@ hero_slider:
     - subtitle : "GitHub Campus TNTU"
       title : "Програмна <br>Інженерія"
       content : "Сучасні освітні програми розроблені для професійної діяльності протягом 25-30 років з мінімальною деградацією знань."
-      bg_image_webp : "images/slider/09.png"
-      bg_image : "images/slider/09.png"
+      bg_image_webp : "images/slider/GitHub-home.webp"
+      bg_image : "images/slider/GitHub-home.jpeg"
       animation : "fadeInLeft" # animation select from : https://daneden.github.io/animate.css/
       button:
         enable : true
@@ -32,11 +32,11 @@ hero_slider:
         
     # slider item
     - subtitle : "GitHub Campus TNTU"
-      title : "Максимальна ефективність <br>з кожного студента"
+      title : "Максимальна ефективність <br>для кожного студента"
       content : "Зосереджуємося на проектах, які є технічно надійними, інноваційними та економічно 
       життєздатними в довгостроковій перспективі."
-      bg_image_webp : "images/slider/image5.jpg"
-      bg_image : "images/slider/image5.jpg"
+      bg_image_webp : "images/slider/GitHub-teachers.webp"
+      bg_image : "images/slider/GitHub-teachers.webp"
       animation : "fadeInRight" # animation select from : https://daneden.github.io/animate.css/
       button:
         enable : true
@@ -50,7 +50,7 @@ banner_feature:
   # Max use 4 item
   feature_item:
     # banner feature item loop
-    - name : "Сучасні освітні програми"
+    - name : "Сучасні технології"
       icon : "fas fa-graduation-cap" # font-awesome 5 : https://fontawesome.com/icons/
       content : "Масштабні освітні програми з мінімальною деградацією знань."
       
@@ -83,10 +83,10 @@ about:
   
   bg_image : "images/backgrounds/about-us-bg.png"
   bg_image_webp : "images/backgrounds/about-us-bg.webp"
-  image_webp : "images/about/image3.jpeg"
-  image : "images/about/image3.jpeg"
+  image_webp : "images/about/technical_communities.webp"
+  image : "images/about/technical_communities.jpeg"
   button:
-    enable : true;
+    enable : false;
     label : "більше послуг"
     link : "#contacts"
 
@@ -95,23 +95,23 @@ funfacts :
   enable : true
   funfacts_item :
     # fanfacts item loop
-    - name : "Поточні проекти"
-      count : "5"
+    - name : "Злучено кафедр ТНТУ"
+      count : "6"
       icon : "fas fa-tasks" # font-awesome 5 : https://fontawesome.com/icons/
       
     # fanfacts item loop
-    - name : "Роки досвіду"
-      count : "15"
+    - name : "Роки досвіду в ТНТУ"
+      count : "3"
       icon : "far fa-calendar-alt" # font-awesome 5 : https://fontawesome.com/icons/
       
     # fanfacts item loop
-    - name : "Студентів на рік"
-      count : "250"
+    - name : "Залучених студентів"
+      count : "350"
       icon : "fas fa-user-graduate" # font-awesome 5 : https://fontawesome.com/icons/
       
     # fanfacts item loop
-    - name : "Площа кафедри (кв.м)"
-      count : "1200"
+    - name : "Репозиторіїв"
+      count : "400"
       icon : "fas fa-map" # font-awesome 5 : https://fontawesome.com/icons/
       
 
@@ -120,8 +120,8 @@ feature:
   enable : true
   subtitle : "Освітні технології"
   title : "Технології GitHub Campus"
-  image_webp : "images/about/GPM-1-2-map.jpeg"
-  image : "images/about/GPM-1-2-map.jpeg"
+  image_webp : "images/about/GitHub-education-settings-banner-background.png"
+  image : "images/about/GitHub-education-settings-banner-background.png"
   content : ""
   feature_item:
     # feature item loop
@@ -194,7 +194,7 @@ team:
 
 ################################# project ############################################
 project:
-  enable : true
+  enable : false
   section: "project"
   show_item : 3
   button:
@@ -270,7 +270,7 @@ blog:
 
 ################################# contacts ################################################
 contact:
-  enable : true
+  enable : false
   image : "images/globe.jpg"
 
   form_fields:
