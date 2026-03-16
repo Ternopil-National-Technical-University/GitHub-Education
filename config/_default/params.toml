@@ -1,6 +1,6 @@
 ########################### Default parameters ######################
 logo = "images/logo.png"
-logo_width = "150px"
+logo_width = "80px"
 logo_footer = "images/logo.png"
 favicon = "images/favicon.png"
 page_sharing_image = "images/backgrounds/page-sharing.jpg"

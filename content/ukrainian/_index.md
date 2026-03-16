@@ -4,43 +4,43 @@ hero_slider:
   enable : true
   slider_item:
     # slider item
-    - subtitle : "GitHub Campus TNTU"
-      title : "Освітні технології <br>майбутнього"
-      content : "Розвиваємо світові освітні екосистеми - GitHub Campus, GitHub Copilot, та програмна інженерія - 
-      присвячені інноваційному навчанню та стратегічному розвитку."
+    - subtitle : "GitHub Education у ТНТУ"
+      title : "Навчайся з інструментами <br>світових лідерів"
+      content : "Приєднуйся до понад 2000+ університетів світу, які використовують GitHub у навчанні. 
+      Отримай безкоштовний доступ до професійних інструментів розробки для студентів та викладачів ТНТУ."
       bg_image_webp : "images/slider/schools-GitHub-Education.webp"
       bg_image : "images/slider/schools-GitHub-Education.jpeg"
       animation : "fadeInUp" # animation select from : https://daneden.github.io/animate.css/
       button:
         enable : true
-        label : "детальніше"
+        label : "приєднатися"
         link : "project/"
         animation : "zoomIn" # animation select from : https://daneden.github.io/animate.css/
         
     # slider item
-    - subtitle : "GitHub Campus TNTU"
-      title : "Програмна <br>Інженерія"
-      content : "Сучасні освітні програми розроблені для професійної діяльності протягом 25-30 років з мінімальною деградацією знань."
+    - subtitle : "Student Developer Pack"
+      title : "Безкоштовні інструменти <br>для студентів"
+      content : "GitHub Copilot, GitHub Codespaces, GitHub Actions та десятки інших професійних сервісів — безкоштовно для кожного студента ТНТУ ім. І. Пулюя."
       bg_image_webp : "images/slider/GitHub-home.webp"
       bg_image : "images/slider/GitHub-home.jpeg"
       animation : "fadeInLeft" # animation select from : https://daneden.github.io/animate.css/
       button:
         enable : true
-        label : "детальніше"
+        label : "отримати доступ"
         link : "project/"
         animation : "zoomIn" # animation select from : https://daneden.github.io/animate.css/
         
     # slider item
-    - subtitle : "GitHub Campus TNTU"
-      title : "Максимальна ефективність <br>для кожного студента"
-      content : "Зосереджуємося на проектах, які є технічно надійними, інноваційними та економічно 
-      життєздатними в довгостроковій перспективі."
+    - subtitle : "GitHub Classroom"
+      title : "Співпраця між <br>кафедрами та факультетами"
+      content : "Автоматизуй зворотний зв'язок, керуй завданнями та роби навчання динамічнішим. 
+      GitHub Classroom об'єднує студентів та викладачів усіх структурних підрозділів ТНТУ."
       bg_image_webp : "images/slider/GitHub-teachers.webp"
       bg_image : "images/slider/GitHub-teachers.webp"
       animation : "fadeInRight" # animation select from : https://daneden.github.io/animate.css/
       button:
         enable : true
-        label : "детальніше"
+        label : "дізнатися більше"
         link : "project/"
         animation : "zoomIn" # animation select from : https://daneden.github.io/animate.css/
 
@@ -50,92 +50,94 @@ banner_feature:
   # Max use 4 item
   feature_item:
     # banner feature item loop
-    - name : "Сучасні технології"
+    - name : "Покращ свої технічні навички"
       icon : "fas fa-graduation-cap" # font-awesome 5 : https://fontawesome.com/icons/
-      content : "Масштабні освітні програми з мінімальною деградацією знань."
+      content : "Опануй сучасні практики індустрії з передовими інструментами GitHub."
       
     # banner feature item loop
-    - name : "GitHub Copilot технології"
+    - name : "GitHub Copilot безкоштовно"
       icon : "fas fa-robot" # font-awesome 5 : https://fontawesome.com/icons/
-      content : "Передові технології штучного інтелекту для продуктивності протягом дня."
+      content : "AI-асистент для написання коду — доступний кожному студенту ТНТУ."
       
     # banner feature item loop
-    - name : "Екологічний вплив освіти"
-      icon : "fas fa-leaf" # font-awesome 5 : https://fontawesome.com/icons/
-      content : "Освіта без шкоди навколишньому середовищу, зменшення залежності від застарілих методів."
+    - name : "Співпраця у всьому кампусі"
+      icon : "fas fa-users" # font-awesome 5 : https://fontawesome.com/icons/
+      content : "Працюй над проектами разом зі студентами та викладачами всіх факультетів."
 
 
 ################################## about ####################################
 about:
   enable : true
-  subtitle : "Про нас"
-  title : "Чим займається GitHub Campus TNTU"
+  subtitle : "Приєднуйся до GitHub Education"
+  title : "Розблокуй пристрасть до навчання разом з GitHub"
   
-  content : "GitHub Campus TNTU розробляє, створює, подтримує та управляє масштабними освітніми програмами в галузі програмної інженерії. Ці програми 
-  перетворюють знання на професійні навички, які постачаються як для національного інноваційного ринку, так і безпосередньо для промислових споживачів.
+  content : "<b>GitHub Education у ТНТУ ім. І. Пулюя</b> — це твій шлях до реальних навичок розробки програмного забезпечення. 
+  Приєднуйся до тисяч освітніх закладів по всьому світу, які вже користуються безкоштовними ресурсами GitHub Education.
   <br><br>
-  Освітні програми масштабу університету складаються з тисяч навчальних модулів, встановлених на широкій зоні знань, підтриманих 
-  освітньою інфраструктурою, такою як GitHub Copilot, спеціальні лабораторії та комп’ютерні класи. Ці системи розроблені для роботи 
-  протягом 25-30 років з мінімальною деградацією якості.
+  <b>Що отримують студенти ТНТУ:</b><br>
+  • <b>GitHub Copilot</b> — AI-помічник для написання коду<br>
+  • <b>GitHub Codespaces</b> — хмарне середовище розробки<br>
+  • <b>GitHub Actions</b> — автоматизація CI/CD процесів<br>
+  • <b>Student Developer Pack</b> — набір з десятків безкоштовних сервісів
   <br><br>
-  GitHub Campus TNTU зосереджується на проектах, які є технічно надійними, соціально відповідальними та економічно 
-  життєздатними в довгостроковій перспективі."
+  Кафедри програмної інженерії, комп'ютерних наук, автоматизації та кібербезпеки ТНТУ вже інтегрували GitHub у навчальний процес. 
+  Долучайся до технічних спільнот нашого кампусу та розвивай свої навички разом з однодумцями!"
   
   bg_image : "images/backgrounds/about-us-bg.png"
   bg_image_webp : "images/backgrounds/about-us-bg.webp"
   image_webp : "images/about/technical_communities.webp"
   image : "images/about/technical_communities.jpeg"
   button:
-    enable : false;
-    label : "більше послуг"
-    link : "#contacts"
+    enable : true
+    label : "зареєструватись"
+    link : "https://education.github.com/discount_requests/application"
 
 ################################## funfacts ###############################
 funfacts :
   enable : true
   funfacts_item :
     # fanfacts item loop
-    - name : "Злучено кафедр ТНТУ"
+    - name : "Кафедр ТНТУ в програмі"
       count : "6"
-      icon : "fas fa-tasks" # font-awesome 5 : https://fontawesome.com/icons/
+      icon : "fas fa-university" # font-awesome 5 : https://fontawesome.com/icons/
       
     # fanfacts item loop
-    - name : "Роки досвіду в ТНТУ"
-      count : "3"
-      icon : "far fa-calendar-alt" # font-awesome 5 : https://fontawesome.com/icons/
+    - name : "Університетів у світі використовують GitHub"
+      count : "2000"
+      icon : "fas fa-globe" # font-awesome 5 : https://fontawesome.com/icons/
       
     # fanfacts item loop
-    - name : "Залучених студентів"
+    - name : "Студентів ТНТУ з доступом"
       count : "350"
       icon : "fas fa-user-graduate" # font-awesome 5 : https://fontawesome.com/icons/
       
     # fanfacts item loop
-    - name : "Репозиторіїв"
-      count : "400"
-      icon : "fas fa-map" # font-awesome 5 : https://fontawesome.com/icons/
+    - name : "Безкоштовних інструментів у Student Pack"
+      count : "100"
+      icon : "fas fa-tools" # font-awesome 5 : https://fontawesome.com/icons/
       
 
 ################################# feature ############################################
 feature:
   enable : true
-  subtitle : "Освітні технології"
-  title : "Технології GitHub Campus"
+  subtitle : "Можливості для студентів"
+  title : "Що дає GitHub Education студентам ТНТУ"
   image_webp : "images/about/GitHub-education-settings-banner-background.png"
   image : "images/about/GitHub-education-settings-banner-background.png"
   content : ""
   feature_item:
     # feature item loop
-    - name : "Сучасне обладнання для якісної освіти"
-      icon : "fas fa-graduation-cap" # font-awesome 5 : https://fontawesome.com/icons/
-      content : "Кафедра програмної інженерії використовує найсучасніше обладнання, розроблене для гарантьовано якісної, надійної та 
-      високопродуктивної освіти.
+    - name : "GitHub Enterprise — безкоштовно для ТНТУ"
+      icon : "fas fa-building" # font-awesome 5 : https://fontawesome.com/icons/
+      content : "Впроваджуй GitHub Enterprise Server та Cloud у своєму навчанні для доступу до розширених інструментів.
       <br><br> 
-      - <b>GitHub Copilot:</b> Наша освітня програма інтегрована з передовими технологіями штучного інтелекту. Ця технологія дозволяє студентам розробляти з максимальною продуктивністю протягом дня. <br>
-      - <b>Перетворення знань:</b> Навчальні модулі захоплюють теоретичні знання та перетворюють їх на практичні навички. Це забезпечується інноваційними системами, які гарантують стабільне та ефективне засвоєння компетенцій.<br>
-      - <b>Інтеграція з індустрією:</b> Набуті знання та навички передаються через партнерства та стажування, 
-      що дозволяє безпечну та плавну інтеграцію в національний ринок праці.
-      <br><br> Ця система забезпечує плавну, безпечну роботу, відповідну кращим практикам індустрії, одночасно 
-      постачаючи кваліфікованих спеціалістів для ринку праці."
+      - <b>GitHub Actions:</b> Налаштовуй автоматизацію збірки, тестування та деплою своїх проектів — як у реальних IT-компаніях.<br>
+      - <b>GitHub Codespaces:</b> Запускай повноцінне середовище розробки прямо в браузері за секунди. Не потрібно встановлювати нічого локально.<br>
+      - <b>GitHub Copilot:</b> AI-асистент, який допомагає писати код швидше, пропонуючи автодоповнення та цілі функції.
+      <br><br>
+      <b>Технічні спільноти ТНТУ:</b> Формуй різноманітні технічні спільноти на кампусі через систему підтримки GitHub — тренінги та менторство для твого зростання та інновацій.
+      <br><br>
+      <b>Тренінги для викладачів:</b> Підтримай своїх викладачів, допомагаючи інтегрувати Git та GitHub у їхній педагогічний інструментарій через самостійні відео-уроки та практичні завдання."
      
       
 ################################# service ############################################
@@ -206,13 +208,13 @@ project:
 ################################# blog ################################################
 cta:
   enable : true
-  title : "Покращте своє майбутнє з сучасними освітніми рішеннями"
+  title : "Приєднуйся до глобальної спільноти розробників — стань частиною GitHub Education у ТНТУ!"
   bg_image_webp : "images/backgrounds/AM_Ref_inst_02-600x600.jpg"
   bg_image : "images/backgrounds/AM_Ref_inst_02-600x600.jpg"
   button:
-    enable : false
-    label : "отримати пропозицію"
-    link : "#contacts"
+    enable : true
+    label : "отримати Student Developer Pack"
+    link : "https://education.github.com/pack"
     
 ################################# testimonial #########################################
 testimonial:
