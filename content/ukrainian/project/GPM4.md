@@ -17,7 +17,7 @@ status : "In development"
 
 {{< image src="/images/project/logo-gpm-4.png" srcAlt="The GPM 4 logo" >}}
 
-GPM Holding is currently developing two additional photovoltaic solar parks:
+TNTU is currently developing two additional photovoltaic solar parks:
 **GreenPower Morocco 2 and GreenPower Morocco 4.**
 
 Like their predecessor, these projects fall under the framework of Law 13-09, which governs electricity production from

@@ -17,14 +17,14 @@
 #weight = 3
 
 [[main]]
-name = "GPM Holding"
-url = "https://gp-maroc.ma/"
+name = "TNTU"
+url = "https://tntu.edu.ua/"
 weight = 4
 
 # footer menu
 [[footer_menu]]
-name = "GPM Holding"
-url = "https://gp-maroc.ma/"
+name = "TNTU"
+url = "https://tntu.edu.ua/"
 weight = 1
 
 # footer bottom links

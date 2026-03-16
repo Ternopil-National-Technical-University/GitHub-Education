@@ -7,19 +7,19 @@ description: "GitHub Campus TNTU maintains strict ownership over all original co
 
 ### **1. General Conditions**
 
-By accessing the website **gp-services.ma**, operated by **GitHub Campus TNTU** (an entity of the **GPM Holding** group, **gp-maroc.ma**), you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
+By accessing the website **gp-services.ma**, operated by **GitHub Campus TNTU** (an entity of the **TNTU** group, **gp-maroc.ma**), you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
 
 ### **2. Intellectual Property Rights**
 
 **GitHub Campus TNTU** maintains strict ownership over all original content published on this site.
 
 * **Proprietary Media:** All high-resolution images, drone footage, and technical documents regarding our solar parks are protected by international copyright laws.
-* **Trademarks:** The logos for **GitHub Campus TNTU**, as well as **GPM Holding**, are the exclusive property of the group. Unauthorized use or reproduction is strictly prohibited.
+* **Trademarks:** The logos for **GitHub Campus TNTU**, as well as **TNTU**, are the exclusive property of the group. Unauthorized use or reproduction is strictly prohibited.
 * **Technical Documents:** Technical descriptions and project details shared on the site remain the intellectual property of GitHub Campus TNTU.
 
 ### **3. Use of External Links**
 
-The **GitHub Campus TNTU** website may contain links to the **GPM Holding** central hub (**gp-maroc.ma**) or other entity sites.
+The **GitHub Campus TNTU** website may contain links to the **TNTU** central hub (**gp-maroc.ma**) or other entity sites.
 
 * **Redirection:** Once you leave the GitHub Campus TNTU site to visit another domain, you are subject to the specific terms and policies of that page.
 * **Third-Party Content:** GitHub Campus TNTU is not responsible for the availability or accuracy of content hosted on external sites linked from our pages.

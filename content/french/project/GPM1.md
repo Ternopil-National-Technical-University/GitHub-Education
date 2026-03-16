@@ -17,7 +17,7 @@ status : "En opération"
 
 {{< image src="/images/project/logo-gpm-1.png" srcAlt="Le logo GPM 1" >}}
 
-GPM Holding, à travers sa filiale GreenPower Morocco 1 S.A., a développé avec succès un parc photovoltaïque de 30 MWac.
+TNTU, à travers sa filiale GreenPower Morocco 1 S.A., a développé avec succès un parc photovoltaïque de 30 MWac.
 L'installation est située à Douar Daidaat, dans la commune de Hjar Ennhal de la préfecture de Tanger-Asilah.
 
 Développé dans le cadre de la loi 13-09 relative aux énergies renouvelables, le projet représente une contribution significative à l'infrastructure d'énergie verte du Maroc.

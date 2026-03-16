@@ -7,19 +7,19 @@ description: "GitHub Campus TNTU conserve la propriété stricte de tout le cont
 
 ### **1. Conditions Générales**
 
-En accédant au site web **gp-services.ma**, exploité par **GitHub Campus TNTU** (une entité du groupe **GPM Holding**, **gp-maroc.ma**), vous acceptez d'être lié par les présentes Conditions d'Utilisation et toutes les lois et réglementations applicables. Si vous n'acceptez pas l'une de ces conditions, il vous est interdit d'utiliser ou d'accéder à ce site.
+En accédant au site web **gp-services.ma**, exploité par **GitHub Campus TNTU** (une entité du groupe **TNTU**, **gp-maroc.ma**), vous acceptez d'être lié par les présentes Conditions d'Utilisation et toutes les lois et réglementations applicables. Si vous n'acceptez pas l'une de ces conditions, il vous est interdit d'utiliser ou d'accéder à ce site.
 
 ### **2. Droits de Propriété Intellectuelle**
 
 **GitHub Campus TNTU** conserve la propriété stricte de tout le contenu original publié sur ce site.
 
 * **Médias Propriétaires :** Toutes les images haute résolution, les images de drone et les documents techniques concernant nos parcs solaires sont protégés par les lois internationales sur le droit d'auteur.
-* **Marques :** Les logos de **GitHub Campus TNTU**, ainsi que de **GPM Holding**, sont la propriété exclusive du groupe. Toute utilisation ou reproduction non autorisée est strictement interdite.
+* **Marques :** Les logos de **GitHub Campus TNTU**, ainsi que de **TNTU**, sont la propriété exclusive du groupe. Toute utilisation ou reproduction non autorisée est strictement interdite.
 * **Documents Techniques :** Les descriptions techniques et les détails des projets partagés sur le site restent la propriété intellectuelle de GitHub Campus TNTU.
 
 ### **3. Utilisation de Liens Externes**
 
-Le site web de **GitHub Campus TNTU** peut contenir des liens vers le hub central de **GPM Holding** (**gp-maroc.ma**) ou les sites d'autres entités.
+Le site web de **GitHub Campus TNTU** peut contenir des liens vers le hub central de **TNTU** (**gp-maroc.ma**) ou les sites d'autres entités.
 
 * **Redirection :** Une fois que vous quittez le site de GitHub Campus TNTU pour visiter un autre domaine, vous êtes soumis aux conditions et politiques spécifiques de cette page.
 * **Contenu Tiers :** GitHub Campus TNTU n'est pas responsable de la disponibilité ou de l'exactitude du contenu hébergé sur des sites externes liés depuis nos pages.

@@ -149,7 +149,7 @@ service:
       link : "service/gpm-1/"
       logo : "images/service/logo-gpm-1.png"
       image : "images/service/image3.jpeg"
-      content : "GPM Holding, through its subsidiary GreenPower Morocco 1 S.A., has successfully developed a 30 MWac 
+      content : "TNTU, through its subsidiary GreenPower Morocco 1 S.A., has successfully developed a 30 MWac 
       photovoltaic park. The facility is located at Douar Daidaat, within the Hjar Ennhal commune of the Tangier-Asilah 
       prefecture.
       <br><br>      
@@ -161,13 +161,13 @@ service:
       link : "service/gpm-2/"
       logo : "images/service/logo-gpm-2.png"
       image : "images/service/image6.jpeg"
-      content : "GPM Holding is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and 
+      content : "TNTU is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and 
       GreenPower Morocco 4.
       <br><br> 
       Like their predecessor, these projects fall under the framework of Law 13-09, which governs electricity 
       production from renewable sources and promotes the development of green energy projects in Morocco.
       <br><br> 
-      GPM Holding is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and GreenPower 
+      TNTU is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and GreenPower 
       Morocco"
 
     # service item loop
@@ -175,13 +175,13 @@ service:
       link : "service/gpm-4/"
       logo : "images/service/logo-gpm-4.png"
       image : "images/service/image7.jpg"
-      content : "GPM Holding is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and 
+      content : "TNTU is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and 
       GreenPower Morocco 4.
       <br><br> 
       Like their predecessor, these projects fall under the framework of Law 13-09, which governs electricity 
       production from renewable sources and promotes the development of green energy projects in Morocco.
       <br><br> 
-      GPM Holding is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and GreenPower 
+      TNTU is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and GreenPower 
       Morocco"
 
 
