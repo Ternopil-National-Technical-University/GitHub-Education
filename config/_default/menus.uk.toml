@@ -1,20 +1,20 @@
 ############# Ukrainian navigation ##############
 
 # main menu
-#[[main]]
-#name = "Головна"
-#url = "/"
-#weight = 1
+[[main]]
+name = "Головна"
+url = "/"
+weight = 1
 #
-#[[main]]
-#name = "Про нас"
-#url = "#about"
-#weight = 2
+[[main]]
+name = "Про нас"
+url = "#about"
+weight = 2
 #
-#[[main]]
-#name = "Контакти"
-#url = "#contacts"
-#weight = 3
+[[main]]
+name = "Контакти"
+url = "#contacts"
+weight = 3
 
 [[main]]
 name = "ТНТУ"
