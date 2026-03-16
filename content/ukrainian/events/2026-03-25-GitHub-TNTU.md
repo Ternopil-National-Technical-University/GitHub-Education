@@ -1,44 +1,44 @@
 ---
 title: "GitHub Education Workshop ТНТУ"
-date: 2026-03-25T10:00:00+02:00
-event_date: "25 березня 2026"
+date: 2026-03-25T14:30:00+02:00
+event_date: "25 березня 2026, 14:30 – 15:45"
 # meta description
 description: "Воркшоп з GitHub Education для студентів та викладачів ТНТУ ім. І. Пулюя"
 # page title background image
-bg_image_webp: "images/backgrounds/project-page-title.jpg"
-bg_image: "images/backgrounds/project-page-title.jpg"
+bg_image_webp: "images/backgrounds/GitHub-home.webp"
+bg_image: "images/backgrounds/GitHub-home.jpg"
 # event image
 image_webp: "images/about/technical_communities.webp"
 image: "images/about/technical_communities.jpeg"
 # event category
 category: "Workshop"
 # event location
-location: "ТНТУ, корпус 1, ауд. 405"
+location: "Читальний зал ТНТУ №2, ауд. 58"
 # event status
 status: "Заплановано"
 ---
 
 ## Про подію
 
-Запрошуємо студентів та викладачів ТНТУ ім. І. Пулюя на воркшоп з GitHub Education!
+Запрошуємо школярів, студентів, та викладачів ТНТУ ім. І. Пулюя на воркшоп з GitHub Education!
 
 ### Що ви дізнаєтесь:
 
-- **Як отримати Student Developer Pack** — безкоштовний доступ до професійних інструментів розробки
-- **GitHub Copilot** — AI-асистент для написання коду
-- **GitHub Codespaces** — хмарне середовище розробки прямо в браузері
-- **GitHub Classroom** — інструмент для викладачів для управління завданнями
+- **Student Developer Pack** — безкоштовний доступ до професійних інструментів розробки
+- **Як отримати доступ** — покрокова інструкція реєстрації
+- **Кар'єрні можливості** — як GitHub допомагає у працевлаштуванні
+- **Спільнота GitHub Education** — глобальна мережа студентів-розробників
 
 ### Програма заходу
 
-| Час | Тема |
-|-----|------|
-| 10:00 - 10:30 | Реєстрація учасників |
-| 10:30 - 11:30 | Вступ до GitHub Education |
-| 11:30 - 12:30 | Практикум: реєстрація в Student Developer Pack |
-| 12:30 - 13:00 | Перерва |
-| 13:00 - 14:00 | GitHub Copilot: практичне використання |
-| 14:00 - 15:00 | Q&A сесія |
+| Час | Тема | Тривалість |
+|-----|------|------------|
+| 14:30 | Вступ | 5 хв |
+| 14:35 | Основна цінність: Student Developer Pack | 10 хв |
+| 14:45 | Як отримати доступ | 5 хв |
+| 14:50 | Кар'єрні можливості та Спільнота | 5 хв |
+| 14:55 | Q&A сесія | 10-15 хв |
+| 15:10-15:45 | Практична частина та індивідуальні консультації | |
 
 ### Для кого
 
@@ -48,7 +48,11 @@ status: "Заплановано"
 
 ### Реєстрація
 
-Для участі потрібно зареєструватися заздалегідь. Кількість місць обмежена!
+Для участі потрібно зареєструватися заздалегідь. 
+
+<a href="https://forms.gle/6nx6mAU3QYT7yBk37" class="btn btn-primary btn-lg mt-3 mb-4" style="font-size: 1.25rem; padding: 15px 40px;" target="_blank">
+  <i class="fas fa-user-plus mr-2"></i> Зареєструватися на подію
+</a>
 
 **Не забудьте взяти з собою:**
 - Ноутбук
