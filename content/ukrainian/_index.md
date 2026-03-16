@@ -14,7 +14,7 @@ hero_slider:
       button:
         enable : true
         label : "приєднатися"
-        link : "project/"
+        link : "#about"
         animation : "zoomIn" # animation select from : https://daneden.github.io/animate.css/
         
     # slider item
@@ -27,7 +27,7 @@ hero_slider:
       button:
         enable : true
         label : "отримати доступ"
-        link : "project/"
+        link : "events/"
         animation : "zoomIn" # animation select from : https://daneden.github.io/animate.css/
         
     # slider item
@@ -41,7 +41,7 @@ hero_slider:
       button:
         enable : true
         label : "дізнатися більше"
-        link : "project/"
+        link : "events/"
         animation : "zoomIn" # animation select from : https://daneden.github.io/animate.css/
 
 ################################## banner feature ############################
@@ -90,7 +90,7 @@ about:
   button:
     enable : true
     label : "зареєструватись"
-    link : "https://education.github.com/discount_requests/application"
+    link : "https://education.github.com/pack"
 
 ################################## funfacts ###############################
 funfacts :
@@ -107,7 +107,7 @@ funfacts :
       icon : "fas fa-globe" # font-awesome 5 : https://fontawesome.com/icons/
       
     # fanfacts item loop
-    - name : "Студентів ТНТУ з доступом"
+    - name : "Студентів та викладачів ТНТУ з доступом"
       count : "350"
       icon : "fas fa-user-graduate" # font-awesome 5 : https://fontawesome.com/icons/
       
@@ -220,8 +220,8 @@ events:
 cta:
   enable : true
   title : "Приєднуйся до глобальної спільноти розробників — стань частиною GitHub Education у ТНТУ!"
-  bg_image_webp : "images/backgrounds/AM_Ref_inst_02-600x600.jpg"
-  bg_image : "images/backgrounds/AM_Ref_inst_02-600x600.jpg"
+  bg_image_webp : "images/backgrounds/GitHub-home.webp"
+  bg_image : "images/backgrounds/GitHub-home.jpeg"
   button:
     enable : true
     label : "отримати Student Developer Pack"
