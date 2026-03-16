@@ -1,19 +1,51 @@
+################################### Ukrainian language ####################################
+[uk]
+languageName = "Укр"
+languageCode = "uk-ua"
+contentDir = "content/ukrainian"
+weight = 1
+
+[uk.params]
+baseURL = "/"
+home = "Головна"
+keywords = ["GitHub Campus TNTU","GitHub Copilot TNTU", "Програмна Інженерія", "", "", "", "", "", "", "", ""]
+
+# contact info
+address = "Тернопільський національний технічний університет імені Івана Пулюя, 56, вул. Руська, Кабінет № 1-104, Тернопіль 46001 Україна"
+email = "github-education@tntu.edu.ua"
+
+# cookie consent content
+consent_manage = 'Керувати налаштуваннями'
+consent_deny = 'Відхилити'
+consent_allow = 'Дозволити'
+consent_outer_message_1 = 'Ми хочемо використовувати '
+consent_inner_message = 'сторонній код'
+consent_outer_message_2 = ' для покращення функціональності цього веб-сайту.'
+consent_description = 'Цей код дає нам уявлення про кількість людей, які відвідують наш веб-сайт, звідки вони та на що натискають.'
+consent_allow_all = 'Дозволити все'
+consent_save_preferences = 'Зберегти'
+
+# footer content
+footer_content = "GitHub Campus TNTU. <br><br> Кафедра програмної інженерії"
+
+# copyright
+copyright = "Copyright © Кафедра програмної інженерії, %s-year Всі права захищені"
+
 ################################### English language #####################################
 [en]
 languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
-weight = 1
+weight = 2
 
 [en.params]
-baseURL = "/"
+baseURL = "/en/"
 home = "Home"
-keywords = ["GitHub Campus TNTU","", "", "", "", "", "", "", "", "", ""]
+keywords = ["GitHub Campus TNTU","GitHub Copilot TNTU", "Software Engineering", "", "", "", "", "", "", "", ""]
 
 # contact info
-address = "Corner of Oujda Avenue and Tan-Tan Residence, Perla Offices, 12th Floor, Office No. 60, Tangier"
-mobile = "+212 539 945 952"
-email = "info@gp-maroc.ma"
+address = "Ternopil Ivan Puluj National Technical University, 56, Ruska Street, Office No. 1-104, Ternopil 46001 Ukraine"
+email = "github-education@tntu.edu.ua"
 
 # cookie consent content
 consent_manage = 'Manage preferences'
@@ -27,26 +59,26 @@ consent_allow_all = 'Allow all'
 consent_save_preferences = 'Save preferences'
 
 # footer content
-footer_content = "GitHub Campus TNTU - Operations and Maintenance (O&M) which includes panel cleaning, electrical inspections, inverter maintenance, performance monitoring, and fault repair. <br><br>Regular cleaning restores performance and extends asset life, particularly in arid environments."
-copyright = "Copyright © GitHub Campus TNTU, %s-year All rights reserved"
+footer_content = "GitHub Campus TNTU. <br><br> Department of Software Engineering"
 
+# copyright
+copyright = "Copyright © Department of Software Engineering, %s-year All rights reserved"
 
 ################################### French language #####################################
 [fr]
 languageName = "Fr"
 languageCode = "fr-fr"
 contentDir = "content/french"
-weight = 2
+weight = 3
 
 [fr.params]
 baseURL = "/fr/"
 home = "Accueil"
-keywords = ["GitHub Campus TNTU","", "", "", "", "", "", "", "", "", ""]
+keywords = ["GitHub Campus TNTU","GitHub Copilot TNTU", "Génie Logiciel", "", "", "", "", "", "", "", ""]
 
 # contact info
-address = "Angle AV Oujda Et TanTan Res, Perla Oficinas 12 Etage Bureau N 60 Tanger"
-mobile = "+212 539 945 952"
-email = "info@gp-maroc.ma"
+address = "Université Nationale Technique Ivan Puluj de Ternopil, 56, rue Ruska, Bureau No. 1-104, Ternopil 46001 Ukraine"
+email = "github-education@tntu.edu.ua"
 
 # cookie consent content
 consent_manage = 'Gérer les préférences'
@@ -60,6 +92,7 @@ consent_allow_all = 'Tout autoriser'
 consent_save_preferences = 'Enregistrer'
 
 # footer content
-footer_content = "GitHub Campus TNTU - Les opérations et la maintenance (O&M) comprennent le nettoyage des panneaux, les inspections électriques, la maintenance des onduleurs, la surveillance des performances et la réparation des pannes. <br><br>Un nettoyage régulier permet de rétablir les performances et de prolonger la durée de vie des équipements, notamment en milieu aride."
+footer_content = "GitHub Campus TNTU. <br><br> Département de Génie Logiciel"
+
 # copyright
-copyright = "Copyright © GitHub Campus TNTU, %s-year Tous droits réservés"
+copyright = "Copyright © Département de Génie Logiciel, %s-year Tous droits réservés"
