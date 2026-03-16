@@ -1,0 +1,25 @@
+{{ "<!-- page title -->" | safeHTML }}
+<section class="section bg-cover overlay" style="background-image: url('{{ .Params.Bg_image_webp | absURL }}'),url('{{ .Params.Bg_image | absURL }}'),url('{{ `images/backgrounds/page-title.jpg` | absURL }}');">
+  <!-- this image is for trigger this section fallback background image -->
+  <img class="d-none" src="{{ .Params.bg_image_webp | absURL }}"
+       onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .Params.bg_image | absURL }})'"
+       alt="Section abstract background">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">{{ .Title }}</h2>
+        {{ "<!-- breadcrumb -->" | safeHTML }}
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="{{ site.Params.BaseURL | relLangURL }}">{{ site.Params.home }}</a></li>
+            {{ if .Section }}
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="{{ .Section | relLangURL }}">{{ i18n (printf "section_%s" .Section) | default (.Section | title) }}</a></li>
+            {{ end }}
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">{{ .Title }}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /page title -->" | safeHTML }}

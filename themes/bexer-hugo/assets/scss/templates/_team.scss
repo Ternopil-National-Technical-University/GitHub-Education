@@ -1,0 +1,16 @@
+/* team */
+.team-skillbar {
+  .progress {
+    height: 6px;
+  }
+  .progress-bar {
+    background-color: $primary-color;
+    align-items: flex-end;
+    border-radius: 0;
+    padding-right: 15px;
+    span {
+      color: $primary-color;
+      background-color: $white;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div class="card border-0 rounded-0 position-relative box-shadow h-100">
+  {{ $Image := or (fileExists (add `static/` (string (.Params.Image_webp)))) (fileExists (add `static/` (string (.Params.Image)))) }}
+  {{ if .Params.Image }}
+  {{ with .Params.Categories }}{{range first 1 .}} <div class="card-type">{{ . | title }}</div>{{ end }}{{ end }}
+  <img loading="lazy" class="card-img-top rounded-0" src="{{ .Params.Image_webp | absURL }}"
+  onerror="this.onerror=null;this.src='{{.Params.Image | absURL }}'" alt="{{ .Title }}">
+  {{ end }}
+  <div class="card-body">
+    {{ if not $Image }}
+    {{ with .Params.Categories }}{{range first 1 .}} <div class="card-type position-static d-inline-block mb-3">{{ . | title }}</div>{{ end }}{{ end }}
+    {{ end }}
+    <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">{{ .Params.Author }}</strong>/ on
+      <strong class="text-dark">{{ .PublishDate.Format "02 Jan 2006" }}</strong></div>
+    <h4 class="card-title"><a class="text-dark" href="{{ .Permalink }}" aria-label="{{.Title}}">{{ .Title }}</a></h4>
+    <div class="section-title-border"></div>
+    <p class="card-text">{{ .Summary }}</p>
+  </div>
+</div>

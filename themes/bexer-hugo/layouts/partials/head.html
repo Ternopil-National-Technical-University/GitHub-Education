@@ -1,0 +1,76 @@
+<meta charset="utf-8">
+<title>{{with .Title}}{{.}}{{else}}{{site.Title}}{{end}}</title>
+
+{{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://localhost:1313/") (eq site.BaseURL "http://examplesite.org/") (eq site.BaseURL "https://examplesite.org/") (eq site.BaseURL "http://examplesite.com/") (eq site.BaseURL "https://examplesite.com/")}}{{else}}
+<base href="{{ site.BaseURL }}">
+{{ end }}
+
+<!-- multilingual SEO optimizations -->
+{{ if .IsTranslated }}
+{{ range .AllTranslations }}
+{{ if eq .Lang "en" }}
+<link rel="canonical" hreflang="{{.Lang}}" href="{{ .Permalink }}">
+{{ else }}
+<link rel="alternate" hreflang="{{.Lang}}" href="{{ .Permalink }}">
+{{ end }}
+{{ end }}
+{{ else }}
+<link rel="canonical" hreflang="x-default" href="{{ .Permalink }}">
+{{ end }}
+
+{{ if site.Params.keywords }}
+<meta itemprop="keywords" content="{{ range $index, $keyword := site.Params.keywords }}{{ $keyword }},{{ end }}" >
+{{ end }}
+
+<meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+{{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+{{ hugo.Generator }}
+
+<meta name="theme-name" content="bexer-hugo" />
+
+<!-- mobile responsive meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+<!-- theme color meta -->
+{{with site.Params.variables.primary_color}}<meta name="theme-color" content="{{.}}">{{end}}
+
+{{- with or .Title site.Title site.Params.title | plainify }}
+<meta property="og:title" content="{{ . }}">
+<meta property="og:site_name" content="{{ . }}">
+{{- end }}
+
+{{ with site.Params }}
+<meta property="og:image" content="{{ .page_sharing_image | absURL }}">
+<meta property="og:description" content="{{ .description }}">
+{{ end }}
+
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="website">
+
+<!-- Google Tag Manager -->
+<script>
+  if (localStorage.getItem("doNotTrack") === null) {
+    localStorage.setItem("doNotTrack", "true"); // default value before any choice has been made
+  }
+</script>
+{{ if $.Site.Params.gtm }}
+<script>
+  let doNotTrack = localStorage.getItem("doNotTrack");
+  if (doNotTrack === "false") {
+    let dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+    if (dnt == "1" || dnt == "yes") {
+      doNotTrack = true;
+    }
+    if (!doNotTrack || doNotTrack === "false") {
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','{{ $.Site.Params.gtm }}');
+    }
+  }
+</script>
+{{ end }}
+<!-- End Google Tag Manager -->
+
+{{ site.Params.custom_script | safeHTML }}

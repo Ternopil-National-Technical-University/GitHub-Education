@@ -1,0 +1,30 @@
+{{ "<!-- service -->" | safeHTML }}
+{{$show_item:= .Params.service.show_item}}
+{{ with site.GetPage (string .Params.service.section) }}
+<section class="bg-green-white" id="solutions">
+  <div class="section bg-secondary section-bottom-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="section-title-border border-center"></div>
+          <h4 class="section-title-sm">{{ .Params.subtitle | markdownify }}</h4>
+          <h2 class="section-title text-white">{{ .Title | markdownify }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="service-wrapper">
+    <div class="container">
+      <div class="row flex-column">
+        {{ range first ($show_item | default 3) .Data.Pages }}
+        {{ "<!-- service-item -->" | safeHTML }}
+        <div class="col-12 mb-4">
+         {{ partial "service-card.html" . }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ "<!-- /service -->" | safeHTML }}

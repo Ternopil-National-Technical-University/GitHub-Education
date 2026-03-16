@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+          <div class="row" id="search-results"></div>
+          <script id="search-result-template" type="text/x-js-template">
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+              <article class="card border-0 shadow rounded-lg" id="summary-${key}">
+                <img loading="lazy" class="card-img-top rounded-0" src="{{site.BaseURL}}/${image}" alt="${title}">
+                <div class="card-body">
+                  <h4><a class="text-dark" href="${link}">${title}</a></h4>
+                  <p class="card-date">${date}</p>
+                  <p>${snippet}</p>
+                  ${ isset tags }<p class="mb-1">Tags: ${tags}</p>${ end }
+                  ${ isset categories }<p class="mb-0">Categories: ${categories}</p>${ end }
+                </div>
+              </article>
+            </div>
+          </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ "<!-- Search index -->" | safeHTML }}
+<script>
+  var indexURL = {{"index.json" | relLangURL}}
+</script>
+
+{{ end }}

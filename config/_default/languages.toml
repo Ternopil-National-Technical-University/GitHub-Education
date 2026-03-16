@@ -1,0 +1,98 @@
+################################### Ukrainian language ####################################
+[uk]
+languageName = "Укр"
+languageCode = "uk-ua"
+contentDir = "content/ukrainian"
+weight = 1
+
+[uk.params]
+baseURL = "/"
+home = "Головна"
+keywords = ["GitHub Campus TNTU","GitHub Copilot TNTU", "Програмна Інженерія", "", "", "", "", "", "", "", ""]
+
+# contact info
+address = "Тернопільський національний технічний університет імені Івана Пулюя, 56, вул. Руська, Кабінет № 1-104, Тернопіль 46001 Україна"
+email = "github-education@tntu.edu.ua"
+
+# cookie consent content
+consent_manage = 'Керувати налаштуваннями'
+consent_deny = 'Відхилити'
+consent_allow = 'Дозволити'
+consent_outer_message_1 = 'Ми хочемо використовувати '
+consent_inner_message = 'сторонній код'
+consent_outer_message_2 = ' для покращення функціональності цього веб-сайту.'
+consent_description = 'Цей код дає нам уявлення про кількість людей, які відвідують наш веб-сайт, звідки вони та на що натискають.'
+consent_allow_all = 'Дозволити все'
+consent_save_preferences = 'Зберегти'
+
+# footer content
+footer_content = "GitHub Campus TNTU. <br><br> <a href='https://kaf-pi.tntu.edu.ua/'>Кафедра програмної інженерії</a>"
+
+# copyright
+copyright = "Copyright © Кафедра програмної інженерії, %s-year Всі права захищені"
+
+################################### English language #####################################
+[en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 2
+
+[en.params]
+baseURL = "/en/"
+home = "Home"
+keywords = ["GitHub Campus TNTU","GitHub Copilot TNTU", "Software Engineering", "", "", "", "", "", "", "", ""]
+
+# contact info
+address = "Ternopil Ivan Puluj National Technical University, 56, Ruska Street, Office No. 1-104, Ternopil 46001 Ukraine"
+email = "github-education@tntu.edu.ua"
+
+# cookie consent content
+consent_manage = 'Manage preferences'
+consent_deny = 'Deny'
+consent_allow = 'Allow'
+consent_outer_message_1 = 'We would like to use '
+consent_inner_message = 'third party code'
+consent_outer_message_2 = ' to improve the functionality of this website.'
+consent_description = 'This code gives us insight into the number of people that visit our website, where they are from and what they are clicking on.'
+consent_allow_all = 'Allow all'
+consent_save_preferences = 'Save preferences'
+
+# footer content
+footer_content = "GitHub Campus TNTU. <br><br> Department of Software Engineering"
+
+# copyright
+copyright = "Copyright © Department of Software Engineering, %s-year All rights reserved"
+
+################################### French language #####################################
+[fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 3
+
+[fr.params]
+baseURL = "/fr/"
+home = "Accueil"
+keywords = ["GitHub Campus TNTU","GitHub Copilot TNTU", "Génie Logiciel", "", "", "", "", "", "", "", ""]
+
+# contact info
+address = "Université Nationale Technique Ivan Puluj de Ternopil, 56, rue Ruska, Bureau No. 1-104, Ternopil 46001 Ukraine"
+email = "github-education@tntu.edu.ua"
+
+# cookie consent content
+consent_manage = 'Gérer les préférences'
+consent_deny = 'Refuser'
+consent_allow = 'Autoriser'
+consent_outer_message_1 = 'Nous souhaitons utiliser '
+consent_inner_message = 'du code tiers'
+consent_outer_message_2 = ' pour améliorer le fonctionnement de ce site.'
+consent_description = "Ce code nous donne un aperçu du nombre de personnes qui visitent notre site, d'où elles viennent et sur quoi elles cliquent."
+consent_allow_all = 'Tout autoriser'
+consent_save_preferences = 'Enregistrer'
+
+# footer content
+footer_content = "GitHub Campus TNTU. <br><br> Département de Génie Logiciel"
+
+# copyright
+copyright = "Copyright © Département de Génie Logiciel, %s-year Tous droits réservés"

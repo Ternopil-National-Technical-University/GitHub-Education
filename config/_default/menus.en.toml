@@ -1,0 +1,34 @@
+############# English navigation ##############
+
+# main menu
+#[[main]]
+#name = "Home"
+#url = "/"
+#weight = 1
+#
+#[[main]]
+#name = "About"
+#url = "#about"
+#weight = 2
+#
+#[[main]]
+#name = "Contact"
+#url = "#contacts"
+#weight = 3
+
+[[main]]
+name = "TNTU"
+url = "https://tntu.edu.ua/"
+weight = 4
+
+# footer menu
+[[footer_menu]]
+name = "TNTU"
+url = "https://tntu.edu.ua/"
+weight = 1
+
+# footer bottom links
+[[footer]]
+name = "Terms of Service"
+url = "terms/"
+weight = 1

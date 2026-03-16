@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ "<!-- service items -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ range .Data.Pages }}
+      {{ "<!-- service-item -->" | safeHTML }}
+      <div class="col-lg-4 col-sm-6 mb-4">
+           {{ partial "service-card.html" . }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /service items -->" | safeHTML }}
+
+{{ end }}

@@ -1,0 +1,52 @@
+{{ "<!-- service -->" | safeHTML }}
+{{ with site.GetPage (string .Params.service.section) }}
+<section class="bg-green-white" id="solutions">
+  <div class="section bg-secondary section-bottom-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="section-title-border border-center"></div>
+          <h4 class="section-title-sm">{{ $.Params.service.subtitle | markdownify }}</h4>
+          <h2 class="section-title text-white">{{ $.Params.service.title | markdownify }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="service-wrapper">
+    <div class="container">
+      <div class="row flex-column">
+        {{ range $.Params.service.service_item }}
+        {{ "<!-- service-item -->" | safeHTML }}
+        <div class="col-12 mb-4">
+          <div class="card border-0 rounded-3 box-shadow position-relative rounded-05">
+            <div class="card-body">
+              <div class="d-flex flex-column flex-md-row align-items-stretch">
+                <div class="mb-3 mb-md-0 me-md-3 px-md-3 text-center d-flex" style="flex-basis: 50%;">
+                  {{ $Image := or (fileExists (add `static/` (string .image_webp))) (fileExists (add `static/` (string .image))) }}
+                  {{ if $Image }}
+                  <img loading="lazy" class="rounded-3 w-100 h-100" src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .name }}" style="object-fit: cover; border-radius: 0.75rem;">
+                  {{ else if .icon }}
+                  <div class="card-icon d-flex align-items-center justify-content-center rounded-3 mx-auto w-100 h-100" style="background-color: #f8f9fa;"><i class="{{.icon}} fa-3x text-primary"></i></div>
+                  {{ end }}
+                </div>
+                <div class="text-md-start d-flex flex-column" style="flex-basis: 50%;">
+                  {{ if .logo }}
+                  <img loading="lazy" src="{{ .logo | absURL }}" alt="{{ .name }} logo" class="mb-2 d-block mx-auto" style="height: 100px; width: auto;">
+                  {{ end }}
+                  <h4 class="text-center card-title mb-2 mt-2">{{ .name }}</h4>
+                  <p class="card-text mb-2">{{ .content | safeHTML }}</p>
+                  <div class="d-flex justify-content-end">
+                    <a href="{{ .link | absURL }}" class="btn btn-secondary btn-arrow btn-sm" aria-label="{{ .name }}">{{ i18n "read_more" }}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ "<!-- /service -->" | safeHTML }}

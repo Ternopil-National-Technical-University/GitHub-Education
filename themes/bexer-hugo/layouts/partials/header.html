@@ -1,0 +1,115 @@
+{{ "<!-- header -->" | safeHTML }}
+<header>
+  {{ if site.Params.top_header }}
+  {{ "<!-- top header -->" | safeHTML }}
+  <div class="top-header bg-secondary pt-2 pb-1 pb-2">
+    <div class="container">
+      <div class="row align-items-center">
+        {{ "<!-- social icons -->" | safeHTML }}
+        <div class="col-lg-6 col-md-6 text-center text-md-left">
+          <span class="text-white mr-2">{{ i18n "connect_with_us" }}:</span>
+          <ul class="list-inline d-inline-block">
+            {{ range site.Params.social }}
+            <li class="list-inline-item"><a class="text-white d-inline-block px-2" href="{{ .link | safeURL }}" aria-label="social profile"><i class="{{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ "<!-- mail and phone -->" | safeHTML }}
+        <div class="col-lg-6 col-md-6 text-md-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item mx-0 border-right border-secondary"><a class="text-white d-inline-block px-lg-3 px-2 py-1 py-md-0" href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+            <li class="list-inline-item mx-0"><a class="text-white d-inline-block px-lg-3 px-2 py-1 py-md-0" href="tel:{{ site.Params.mobile }}">{{ i18n "call_now" }}: <span class="text-primary">{{ site.Params.mobile }}</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ "<!-- /top header -->" | safeHTML }}
+  {{ end }}
+
+  {{ "<!-- navigation -->" | safeHTML }}
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-light bg-white">
+        {{ $baseURL := site.BaseURL }}
+        {{ if eq .Page.Lang "fr" }}
+        {{ $baseURL = site.Params.baseURL | default (printf "%sfr/" site.BaseURL) }}
+        {{ else if eq .Page.Lang "en" }}
+        {{ $baseURL = site.Params.baseURL | default site.BaseURL }}
+        {{ end }}
+        <a class="navbar-brand py-4 py-xl-0" href="{{ $baseURL | relLangURL }}"><img loading="lazy" class="img-fluid" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }} logo" style="width:{{ site.Params.logo_width}}"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+<!--            <li class="nav-item">-->
+<!--              <a class="nav-link" href="{{ site.BaseURL | relLangURL }}">{{ site.Params.Home }}</a>-->
+<!--            </li>-->
+            {{ range site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                {{ .Name }}
+              </a>
+              <div class="dropdown-menu" >
+                {{ range .Children }}
+                <a class="dropdown-item" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </li>
+            {{ else }}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+          </ul>
+
+          <!-- Language List -->
+          {{ if .IsTranslated }}
+          <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+            {{ $siteLanguages := site.Languages}}
+            {{ $pageLang := .Page.Lang}}
+            {{ range .Page.AllTranslations }}
+            {{ $translation := .}}
+            {{ range $siteLanguages }}
+            {{ if eq $translation.Lang .Lang }}
+            {{ $selected := false }}
+            {{ if eq $pageLang .Lang}}
+            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
+            {{ else }}
+            <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+            {{ end }}
+          </select>
+          {{ end }}
+
+          {{ if site.Params.search }}
+          {{ "<!-- search -->" | safeHTML }}
+          <div class="search px-4">
+            <button id="searchOpen" class="search-btn"><i class="fas fa-search text-dark"></i></button>
+            <div class="search-wrapper">
+              <form class="h-100" action="{{ `search`| relLangURL }}">
+                <input class="search-box h-100 form-control" id="search-query" name="s" type="search" placeholder="{{ i18n `search_placeholder`}}">
+              </form>
+              <button id="searchClose" class="search-close"><i class="fas fa-times text-dark"></i></button>
+            </div>
+          </div>
+          {{ end }}
+          {{ if site.Params.navigation_button.enable }}
+          {{ "<!-- get start btn -->" | safeHTML }}
+          <a href="{{ site.Params.navigation_button.link | absLangURL }}" class="btn btn-primary hover-ripple">{{ i18n "get_a_quote" }}</a>
+          {{ end }}
+        </div>
+      </nav>
+    </div>
+  </div>
+  {{ "<!-- /navigation -->" | safeHTML }}
+</header>
+{{ "<!-- /header -->" | safeHTML }}

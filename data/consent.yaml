@@ -1,0 +1,5 @@
+items:
+  - title: Google Analytics
+    is_checked: true
+    is_functional: false
+    script_file: ga.js

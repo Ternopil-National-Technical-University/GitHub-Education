@@ -1,0 +1,30 @@
+{{ "<!-- partners -->" | safeHTML }}
+{{ with .Params.partners }}
+<section class="section bg-light-green bg-dots">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title-border border-center"></div>
+        <h4 class="section-title-sm">{{ .subtitle | markdownify }}</h4>
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      {{ range .partners_item }}
+      {{ "<!-- partner item -->" | safeHTML }}
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="partner-item text-center bg-white rounded p-4 h-100">
+          <div class="partner-logo-container mb-4">
+            <img loading="lazy" class="img-fluid partner-logo" src="{{ .partner_logo | absURL }}" alt="{{ .name }} logo">
+          </div>
+          <h5 class="mb-2">{{ .name }}</h5>
+          <p class="text-primary mb-3">{{ .description | markdownify }}</p>
+          <p class="text-muted">{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ "<!-- /partners -->" | safeHTML }}

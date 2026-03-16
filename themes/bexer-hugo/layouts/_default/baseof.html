@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default `en-US` }}">
+
+<head>
+	{{ partial "head.html" . }}
+	{{ partialCached "style.html" . }}
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  {{ if $.Site.Params.gtm }}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ $.Site.Params.gtm }}"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {{ end }}
+  <!-- End Google Tag Manager (noscript) -->
+
+
+	{{ partialCached "preloader.html" . }}
+	{{ partial "header.html" . }}
+	<main>
+		{{ block "main" . }}{{ end }}
+	</main>
+	{{ partial "footer.html" . }}
+	{{ partialCached "script.html" . }}
+
+  {{ if $.Site.Params.cookie_consent }}
+    {{ partial "consent.html" . }}
+  {{ end }}
+</body>
+
+</html>

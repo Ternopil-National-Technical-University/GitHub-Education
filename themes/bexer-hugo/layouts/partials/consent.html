@@ -1,0 +1,175 @@
+{{ with site.Params.variables }}
+<style>
+  #consent-notice {font-size: 0.8rem; padding: 1rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; background: #222; color: rgba(255,255,255,0.8); z-index: 9999}
+  #consent-notice span {margin-right: 1rem;}
+  #consent-notice button {cursor: pointer; display: inline-block; width: auto;}
+  #consent-notice span a {color: inherit; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.5);}
+  #consent-notice button.btn {font-size: 0.8rem; font-weight: normal; height: 1.83rem; color: rgba(255,255,255,0.8); padding: 0.35rem 0.7rem; border: 0; border-radius: 0.25rem; margin-left: 0.5rem; margin-bottom: 0.5rem;}
+  #consent-notice button.btn.manage-consent {background: rgba(255,255,255,0.1); }
+  #consent-notice button.btn.deny-consent {background: rgba(255,255,255,0.1); }
+  #consent-notice button.btn.approve-consent {background: {{.primary_color | default "#86c33a"}}; font-weight: bold; }
+
+  #consent-overlay {position: fixed; left: 0; top: 0; width: 100%; height: 100vh; display: none; background: rgba(0,0,0,0.75); z-index: 999999; overflow: auto; cursor: pointer;}
+  #consent-overlay.active {display: flex;}
+  #consent-overlay > div {background: white; width: 100%; max-width: 30rem; padding: 1.75rem; margin: auto; cursor: initial;}
+  #consent-overlay > div > div {display: flex; align-items: flex-start; margin-bottom: 1rem;}
+  #consent-overlay > div > div:last-child {margin: 0;}
+  #consent-overlay h3 {font-size: 1.1rem; font-weight: normal; color: #444444; padding-left: 0.25rem; padding-top: 0; margin-top: 0;}
+  #consent-overlay input {margin-top: 0.25rem; margin-right: 0.4rem;}
+  #consent-overlay label {}
+  #consent-overlay label {font-size: 0.8rem; font-weight: normal; color: #666666; display: block;}
+  #consent-overlay .btn { background: {{.primary_color | default "#86c33a"}}; color: rgba(255,255,255,0.8); font-size: 0.8rem; height: 1.83rem; font-weight: bold; margin-right: 0.5rem; border: 0; cursor: pointer; border-radius: 0.25rem; width: calc(100% - 1.24rem); padding: .375rem .75rem;}
+  #consent-overlay button.btn.save-consent {background: rgba(0,0,0,0.6); font-weight: normal;}
+
+  @media (max-width: 767px) {
+    #consent-overlay > div {padding: 1.75rem 1rem;}
+    #consent-notice span {display: block; padding-top: 3px; margin-bottom: 1.5rem;}
+    #consent-notice button.btn {position: relative; bottom: 4px;}
+  }
+</style>
+{{ end }}
+
+<div id="consent-notice">
+  <span>{{ .Site.Params.consent_outer_message_1 }}<a class="manage-consent">{{ .Site.Params.consent_inner_message }}</a>{{ .Site.Params.consent_outer_message_2 }}</span>
+  <button id="manage-consent" class="btn manage-consent">{{ .Site.Params.consent_manage }}</button>
+  <button id="cookie-notice-deny" class="btn deny-consent">{{ .Site.Params.consent_deny }}</button>
+  <button id="cookie-notice-accept" class="btn approve-consent">{{ .Site.Params.consent_allow }}</button>
+</div>
+<div id="consent-overlay">
+  <div>
+    {{ $description := .Site.Params.consent_description }}
+    {{ $details_link_name := .Site.Params.consent_details_link_name }}
+    {{ $details_link := .Site.Params.consent_details_link }}
+    {{ $details := .Site.Params.consent_details }}
+    {{ range $index, $item := .Site.Data.consent.items }}
+    <div>
+      <input type="checkbox" id="item{{ $index }}" value="1" name="item{{ $index }}"
+             {{ if $item.is_checked }} checked {{ end }}
+             {{ if $item.is_functional }} disabled {{ end }}
+      >
+      <label for="item{{ $index }}">
+        <h3>{{ $item.title }}</h3>
+        <p>{{ $description }}</p>
+        {{ if $details_link }}
+        {{ $details }}:
+        <a class="hover-black black-70" href="{{ .Site.Home.Permalink }}{{ $details_link }}" target="_blank">
+          {{ $details_link_name }}
+        </a>
+        {{ end }}
+      </label>
+    </div>
+    {{ end }}
+    <div>
+      <button id="save-consent" class="btn save-consent" data-consentvalue="{{ range $index, $item := .Site.Data.consent.items }}{{ if $item.is_functional}}{{ else }}0{{ end }}{{ end }}">{{ .Site.Params.consent_save_preferences }}</button>
+      <button id="cookie-notice-accept-all" class="btn approve-consent">{{ .Site.Params.consent_allow_all }}</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function createCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+      let date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+  }
+  function readCookie(name) {
+    let nameEQ = name + "=";
+    let ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+  function eraseCookie(name) {
+    createCookie(name, "", -1);
+  }
+
+  // Allowing and Denying
+  function allow() {
+    createCookie('cookie-notice-option', 'true', 31);
+    localStorage.setItem("doNotTrack", "false");
+    document.getElementById('consent-notice').style.display = 'none';
+    location.reload();
+  }
+  function deny() {
+    createCookie('cookie-notice-option', 'false', 31);
+    localStorage.setItem("doNotTrack", "true");
+    document.getElementById('consent-notice').style.display = 'none';
+    location.reload();
+  }
+
+  // Saving preferences
+  function setConsentValue() {
+    let elements = document.querySelectorAll('#consent-overlay input:not([disabled])');
+    let consentValue = "";
+    elements.forEach(function(el) {
+      if(el.checked) consentValue = consentValue + "1";
+      else consentValue = consentValue + "0";
+    });
+    document.getElementById("save-consent").dataset.consentvalue = consentValue;
+  }
+  function setConsentInputs(consentValue) {
+    let elements = document.querySelectorAll('#consent-overlay input:not([disabled])');
+    elements.forEach(function(el,index) {
+      if(consentValue[index]=="1") el.checked = true;
+      else el.checked = false;
+    });
+  }
+  function acceptSomeConsentScripts(consentValue) {
+    setConsentInputs(consentValue);
+    createCookie('consent-settings',consentValue,31);
+    document.getElementById('consent-overlay').classList.remove('active');
+    location.reload()
+  }
+
+  function checkConsent() {
+    if (readCookie('cookie-notice-option') === 'true') {
+      localStorage.setItem("doNotTrack", "false");
+    } else if (readCookie('cookie-notice-option') !== 'false') {
+      document.getElementById('consent-notice').style.display = 'block';
+    }
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    checkConsent();
+
+    document.getElementById('cookie-notice-accept').addEventListener("click", function () {
+      let consentValue = readCookie('consent-settings');
+      if(consentValue === "0"){
+        deny();
+      } else {
+        allow();
+      }
+    });
+    document.getElementById('cookie-notice-accept-all').addEventListener("click", function () {
+      allow();
+    });
+    document.getElementById('cookie-notice-deny').addEventListener("click", function () {
+      deny();
+    });
+
+    // Manage Preferences (opening & closing)
+    let elements = document.querySelectorAll('.manage-consent');
+    elements.forEach(function(el) {
+      el.addEventListener("click",function() {
+        document.getElementById('consent-overlay').classList.toggle('active');
+      });
+    });
+    document.getElementById("consent-overlay").addEventListener("click",function(e) {
+      if (!document.querySelector("#consent-overlay > div").contains(e.target)){
+        this.classList.toggle('active');
+      }
+    });
+
+    // Saving preferences
+    document.getElementById("save-consent").addEventListener("click",function() {
+      setConsentValue();
+      acceptSomeConsentScripts(this.dataset.consentvalue);
+    });
+  });
+</script>

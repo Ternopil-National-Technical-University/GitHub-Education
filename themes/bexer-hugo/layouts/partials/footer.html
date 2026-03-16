@@ -1,0 +1,88 @@
+<!-- footer -->
+<footer>
+  <!-- main footer -->
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        <!-- footer content -->
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <!-- logo -->
+<!--          <a class="mb-4 d-inline-block" href="{{ site.BaseURL | relLangURL }}"><img loading="lazy" class="img-fluid"-->
+<!--              src="{{ site.Params.logo_footer | absURL }}" alt="{{ site.Title }} logo" style="width:{{ site.Params.logo_width}}"></a>-->
+          <p class="text-light mb-5">{{ site.Params.footer_content | markdownify }}</p>
+          {{ if site.Params.social }}
+            <h4 class="text-primary mb-4">{{ i18n "follow" }}</h4>
+            <!-- social links -->
+            <ul class="list-inline social-icon-alt">
+              {{ range site.Params.social }}
+              <li class="list-inline-item">
+                <a class="hover-ripple" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a>
+              </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <!-- service list -->
+            <div class="col-6">
+              <h4 class="text-primary mb-4">{{ i18n "footer_menu" }}</h4>
+              <ul class="pl-0">
+                {{ range site.Menus.footer_menu }}
+                <li class="mb-3 text-light"><a class="text-light d-block" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+            <!-- contact info -->
+            <div class="col-6">
+              <h4 class="text-primary mb-4">{{ i18n "contact_info"}}</h4>
+              <ul class="list-unstyled">
+                <li class="text-light mb-3">{{ site.Params.mobile }}</li>
+                <li class="text-light mb-3">{{ site.Params.email }}</li>
+                <li class="text-light mb-3">{{ site.Params.address }}</li>
+              </ul>
+            </div>
+            {{ if site.Params.subscription.enable }}
+            {{ with site.Params.subscription }}
+            <div class="col-12">
+              <h4 class="text-primary mt-5 mb-4">{{ i18n "subscribe_newsletter"}}</h4>
+              <form action="{{ .mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
+                <div class="position-relative">
+                  <input type="email" class="form-control border-0 text-white newsletter-form" id="newsletter" name="newsletter" placeholder="Enter your email">
+                  <button type="submit" name="subscribe" class="btn btn-primary btn-subscribe">{{ i18n "subscribe"}}</button>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="{{ .mailchimp_form_name }}" tabindex="-1">
+                  </div>
+                </div>
+              </form>
+            </div>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">{{ replace site.Params.copyright "%s-year" (string site.Params.year) }}</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            {{ range site.Menus.footer }}
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="{{ .URL | relLangURL }}" class="text-white">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-none">
+    {{ site.Params.deployed_git_tag }}
+  </div>
+</footer>
+<!-- /footer -->

@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /search/
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl delay
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://gp-services.ma/sitemap.xml
+Sitemap: https://gp-services.ma/en/sitemap.xml
+Sitemap: https://gp-services.ma/fr/sitemap.xml

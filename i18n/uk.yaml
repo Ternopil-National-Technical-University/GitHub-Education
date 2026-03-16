@@ -1,0 +1,89 @@
+- id: read_more
+  translation: Читати далі
+
+- id: address
+  translation: Наша адреса
+
+- id: phone
+  translation: Номер телефону
+
+- id: email
+  translation: Напишіть нам
+
+- id: contact_form
+  translation: Форма зв'язку
+
+- id: contact_form_send
+  translation: Дякуємо за повідомлення
+
+- id: send
+  translation: Відправити повідомлення
+
+- id: follow
+  translation: СЛІДКУЙТЕ ЗА НАМИ В
+
+- id: footer_menu
+  translation: Основна організація
+
+- id: contact_info
+  translation: Контактна інформація
+
+- id: subscribe_newsletter
+  translation: Підписатися на новини
+
+- id: subscribe
+  translation: Підписатися
+
+- id: connect_with_us
+  translation: Зв'яжіться з нами
+
+- id: call_now
+  translation: Подзвонити зараз
+
+- id: search_placeholder
+  translation: Введіть і натисніть Enter...
+
+- id: quick_contact
+  translation: Швидкий зв'язок
+
+- id: latest_article
+  translation: Остання стаття
+
+- id: category
+  translation: Категорія
+
+- id: tags
+  translation: Теги
+
+- id: all
+  translation: УСІ
+
+- id: client
+  translation: клієнт
+
+- id: date
+  translation: дата
+
+- id: status
+  translation: статус
+
+- id: our_services
+  translation: Наші послуги
+
+- id: get_a_quote
+  translation: Отримати пропозицію
+
+- id: section_blog
+  translation: Блог
+
+- id: section_project
+  translation: Проекти
+
+- id: section_service
+  translation: Послуги
+
+- id: section_team
+  translation: Команда
+
+- id: location
+  translation: Місце проведення

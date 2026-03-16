@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ "<!-- team member -->" | safeHTML }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ range .Data.Pages }}
+      {{ "<!-- team member -->" | safeHTML }}
+      <div class="col-lg-4 col-sm-6 mb-5">
+        {{ .Render "team-card" }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /team member -->" | safeHTML }}
+
+
+{{ end }}
