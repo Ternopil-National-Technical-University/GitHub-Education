@@ -55,7 +55,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "https://gp-services.gp-maroc.ma/"
+            --baseURL "https://ternopil-national-technical-university.github.io/GitHub-Education/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
