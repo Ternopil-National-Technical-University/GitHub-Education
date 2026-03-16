@@ -7,8 +7,8 @@ page_sharing_image = "images/backgrounds/page-sharing.jpg"
 # top header
 top_header = false
 # Meta data
-description = "GPM Services"
-author = "GPM Services"
+description = "GitHub Campus TNTU"
+author = "GitHub Campus TNTU"
 
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io

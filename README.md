@@ -1,5 +1,5 @@
 # gp-services
-GPM Services 
+GitHub Campus TNTU 
 
 gp-services.ma
 
