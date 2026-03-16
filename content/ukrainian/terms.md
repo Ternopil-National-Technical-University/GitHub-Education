@@ -1,40 +1,47 @@
 ---
-title: "Our Terms And Conditions"
+title: "Умови використання"
 draft: false
 # description
-description: "GitHub Campus TNTU maintains strict ownership over all original content published on this site."
+description: "GitHub Campus TNTU зберігає за собою суворі права власності на весь оригінальний контент, опублікований на цьому сайті."
 ---
 
-### **1. General Conditions**
+### **1. Загальні умови**
 
-By accessing the website **gp-services.ma**, operated by **GitHub Campus TNTU** (an entity of the **TNTU** group, **gp-maroc.ma**), you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
+Заходячи на веб-сайт **GitHub Campus TNTU**, який керується **Кафедрою програмної інженерії** **Тернопільського національного технічного університету імені Івана Пулюя**, ви погоджуєтеся дотримуватися цих Умов використання та всіх відповідних законів і нормативних актів. Якщо ви не погоджуєтеся з будь-якими з цих умов, вам заборонено використовувати або отримувати доступ до цього сайту.
 
-### **2. Intellectual Property Rights**
+### **2. Права інтелектуальної власності**
 
-**GitHub Campus TNTU** maintains strict ownership over all original content published on this site.
+**GitHub Campus TNTU** зберігає за собою суворі права власності на весь оригінальний контент, опублікований на цьому сайті.
 
-* **Proprietary Media:** All high-resolution images, drone footage, and technical documents regarding our solar parks are protected by international copyright laws.
-* **Trademarks:** The logos for **GitHub Campus TNTU**, as well as **TNTU**, are the exclusive property of the group. Unauthorized use or reproduction is strictly prohibited.
-* **Technical Documents:** Technical descriptions and project details shared on the site remain the intellectual property of GitHub Campus TNTU.
+* **Власні матеріали:** Всі зображення високої роздільної здатності, відео матеріали та технічні документи щодо наших освітніх проектів захищені міжнародними законами про авторське право.
+* **Торгові марки:** Логотипи **GitHub Campus TNTU**, а також **ТНТУ**, є виключною власністю університету. Несанкціоноване використання або відтворення суворо заборонено.
+* **Технічні документи:** Технічні описи та деталі проектів, які публікуються на сайті, залишаються інтелектуальною власністю GitHub Campus TNTU.
 
-### **3. Use of External Links**
+### **3. Використання зовнішніх посилань**
 
-The **GitHub Campus TNTU** website may contain links to the **TNTU** central hub (**gp-maroc.ma**) or other entity sites.
+Веб-сайт **GitHub Campus TNTU** може містити посилання на офіційний сайт **ТНТУ** (**tntu.edu.ua**) або інші освітні ресурси.
 
-* **Redirection:** Once you leave the GitHub Campus TNTU site to visit another domain, you are subject to the specific terms and policies of that page.
-* **Third-Party Content:** GitHub Campus TNTU is not responsible for the availability or accuracy of content hosted on external sites linked from our pages.
+* **Перенаправлення:** Коли ви залишаєте сайт GitHub Campus TNTU для відвідування іншого домену, ви підпорядковуєтеся конкретним умовам і політиці цієї сторінки.
+* **Контент третіх сторін:** GitHub Campus TNTU не несе відповідальності за доступність або точність контенту, розміщеного на зовнішніх сайтах, на які є посилання з наших сторінок.
 
-### **4. Accuracy of Information**
+### **4. Точність інформації**
 
-While we strive for precision, the content on this site - particularly project specifications and solution descriptions - is provided for general informational purposes.
+Хоча ми прагнемо до точності, контент на цьому сайті - особливо специфікації проектів і описи освітніх рішень - надається для загальних інформаційних цілей.
 
-* **Updates:** Technical details and project descriptions are subject to change without notice as developments occur.
-* **Disclaimer:** GitHub Campus TNTU does not warrant that the materials on its website are accurate, complete, or current.
+* **Оновлення:** Технічні деталі та описи проектів можуть змінюватися без попередження у міру розвитку.
+* **Відмова від відповідальності:** GitHub Campus TNTU не гарантує, що матеріали на його веб-сайті є точними, повними або актуальними.
 
-### **5. Prohibited Conduct**
+### **5. Заборонена поведінка**
 
-Users are prohibited from:
+Користувачам заборонено:
 
-* Attempting to decompile or reverse engineer any software contained on the websites.
-* Using the sites for any fraudulent or illegal purpose.
-* Interfering with the security features of the secure, static architecture.
+* Спроби декомпілювати або здійснювати зворотну інженерію будь-якого програмного забезпечення, що міститься на веб-сайтах.
+* Використовувати сайти для будь-яких шахрайських або незаконних цілей.
+* Втручатися в функції безпеки безпечної статичної архітектури.
+
+### **6. Контактна інформація**
+
+З питань щодо цих умов користування звертайтеся:
+
+* **Email:** github-education@tntu.edu.ua
+* **Адреса:** Тернопільський національний технічний університет імені Івана Пулюя, 56, вул. Руська, Кабінет № 1-104, Тернопіль 46001 Україна
