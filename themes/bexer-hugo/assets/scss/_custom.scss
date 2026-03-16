@@ -163,3 +163,14 @@ section[id] {
 #form-messages {
   transition: all 0.3s ease-in-out;
 }
+
+/* Feature section image sizing - reduced by 30% */
+.feature-img-bg {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.feature-img-bg img {
+  width: 100%;
+  height: auto;
+}
