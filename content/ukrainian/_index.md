@@ -81,7 +81,9 @@ about:
   • <b>Student Developer Pack</b> — набір з десятків безкоштовних сервісів
   <br><br>
   Кафедри програмної інженерії, комп'ютерних наук, автоматизації та кібербезпеки ТНТУ вже інтегрували GitHub у навчальний процес. 
-  Долучайся до технічних спільнот нашого кампусу та розвивай свої навички разом з однодумцями!"
+  Долучайся до технічних спільнот нашого кампусу та розвивай свої навички разом з однодумцями!
+  <br><br>
+  <b>Офіційна GitHub-сторінка ТНТУ:</b> <a href='https://github.com/Ternopil-National-Technical-University' target='_blank'>github.com/Ternopil-National-Technical-University</a>"
   
   bg_image : "images/backgrounds/about-us-bg.png"
   bg_image_webp : "images/backgrounds/about-us-bg.webp"
