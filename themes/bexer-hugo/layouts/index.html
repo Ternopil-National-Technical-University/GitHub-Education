@@ -189,6 +189,48 @@
 {{end}}
 {{ "<!-- /case study -->" | safeHTML }}
 
+{{ "<!-- events section -->" | safeHTML }}
+{{ if .Params.events.enable}}
+<section class="section pt-0" id="events">
+  <div class="pb-4 pt-5 bg-green-white">
+    <div class="container">
+      <div class="row">
+        {{ with site.GetPage (string .Params.events.section) }}
+        <div class="col-md-8">
+          <div class="section-title-border"></div>
+          <h4 class="section-title-sm">{{ .Params.title | markdownify }}</h4>
+          <h2>{{ .Params.subtitle | markdownify }}</h2>
+        </div>
+        {{end}}
+        {{ with .Params.events }}
+        {{ if .button.enable }}
+        {{ with .button }}
+        <div class="col-md-4 text-right align-self-end d-md-block d-none">
+          <a href="{{ .link | absLangURL }}" class="btn btn-primary mb-3 hover-ripple">{{ .label }}</a>
+        </div>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid px-0">
+    <div class="row no-gutters">
+      {{$show_item:= .Params.events.show_item}}
+      {{ with site.GetPage (string .Params.events.section) }}
+      {{ range first ($show_item | default 4) .Data.Pages }}
+      {{ "<!-- event-item -->" | safeHTML }}
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+      {{ partial "event-card.html" . }}
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{end}}
+{{ "<!-- /events section -->" | safeHTML }}
+
 {{ if .Params.cta.enable }}
 {{ with .Params.cta }}
 {{ "<!-- call to action -->" | safeHTML }}

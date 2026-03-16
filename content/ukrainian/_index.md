@@ -205,6 +205,17 @@ project:
     link : "project/"
   # project item comes from "content/*/project" folder
 
+################################# events ############################################
+events:
+  enable : true
+  section: "events"
+  show_item : 3
+  button:
+    enable : true
+    label : "всі події"
+    link : "events/"
+  # event items come from "content/*/events" folder
+
 ################################# blog ################################################
 cta:
   enable : true

@@ -10,16 +10,21 @@ weight = 1
 name = "Про нас"
 url = "#about"
 weight = 2
-#
+
+[[main]]
+name = "Події"
+url = "events/"
+weight = 3
+
 [[main]]
 name = "Контакти"
 url = "#contacts"
-weight = 3
+weight = 4
 
 [[main]]
 name = "ТНТУ"
 url = "https://tntu.edu.ua/"
-weight = 4
+weight = 5
 
 # footer menu
 [[footer_menu]]

@@ -13,6 +13,8 @@ disableLanguages = ["fr", "en"] # example: ["fr"] for disable french language. s
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 enableRobotsTXT = true
 defaultContentLanguage = "uk"
+# Build pages with future dates (for events)
+buildFuture = true
 
 ############################# Build ##############################
 [build]

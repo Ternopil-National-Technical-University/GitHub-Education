@@ -56,7 +56,7 @@
   translation: Теги
 
 - id: all
-  translation: ВСЕ
+  translation: УСІ
 
 - id: client
   translation: клієнт
@@ -84,3 +84,6 @@
 
 - id: section_team
   translation: Команда
+
+- id: location
+  translation: Місце проведення
