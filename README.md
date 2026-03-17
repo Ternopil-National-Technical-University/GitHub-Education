@@ -1,7 +1,5 @@
-# gp-services
-GitHub Campus TNTU 
-
-gp-services.ma
+# GitHub Education
+GitHub Campus TNTU
 
 ## Local Development with Docker
 
