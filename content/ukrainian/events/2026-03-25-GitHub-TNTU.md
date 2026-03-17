@@ -52,8 +52,9 @@ status: "Заплановано"
 Зареєструйтесь для участі заздалегідь! 
 
 <a href="https://forms.gle/6nx6mAU3QYT7yBk37" class="btn btn-primary btn-lg mt-3 mb-4" style="font-size: 1.25rem; padding: 15px 40px;" target="_blank">
-  <i class="fas fa-user-plus mr-2"></i> Заруйтесь тут
+  <i class="fas fa-user-plus mr-2"></i> Зареєструйтесь тут
 </a>
+
 
 **Візьміть з собою:**
 - Ноутбук
