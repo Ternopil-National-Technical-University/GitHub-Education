@@ -4,43 +4,44 @@ hero_slider:
   enable : true
   slider_item:
     # slider item
-    - subtitle : "GPM Parks"
-      title : "Hubs Industriels <br>Durables"
-      content : "Développement d'écosystèmes industriels de classe mondiale - GPM 1, GPM 2 et GPM 4 - dédiés aux 
-      énergies renouvelables et à la croissance stratégique."
-      bg_image_webp : "images/slider/image44.jpeg"
-      bg_image : "images/slider/image44.jpeg"
+    - subtitle : "GitHub Education у ТНТУ"
+      title : "Навчайся з інструментами <br>світових лідерів"
+      content : "Приєднуйся до понад 2000+ університетів світу, які використовують GitHub у навчанні. 
+      Отримай безкоштовний доступ до професійних інструментів розробки для студентів та викладачів ТНТУ."
+      bg_image_webp : "images/slider/schools-GitHub-Education.webp"
+      bg_image : "images/slider/schools-GitHub-Education.jpeg"
       animation : "fadeInUp" # animation select from : https://daneden.github.io/animate.css/
       button:
         enable : true
-        label : "plus de détails"
-        link : "fr/project/"
+        label : "приєднатися"
+        link : "#about"
         animation : "zoomIn" # animation select from : https://daneden.github.io/animate.css/
 
     # slider item
-    - subtitle : "GPM Parks"
-      title : "Production d'énergie <br>solaire à grande échelle"
-      content : "Les centrales solaires à grande échelle sont conçues pour fonctionner pendant 25 à 30 ans avec une dégradation minimale."
-      bg_image_webp : "images/slider/09.png"
-      bg_image : "images/slider/09.png"
+    - subtitle : "Student Developer Pack"
+      title : "Безкоштовні інструменти <br>для студентів"
+      content : "GitHub Copilot, GitHub Codespaces, GitHub Actions та десятки інших професійних сервісів — безкоштовно для кожного студента ТНТУ ім. І. Пулюя."
+      bg_image_webp : "images/slider/GitHub-home.webp"
+      bg_image : "images/slider/GitHub-home.jpeg"
       animation : "fadeInLeft" # animation select from : https://daneden.github.io/animate.css/
       button:
         enable : true
-        label : "plus de détails"
-        link : "fr/project/"
+        label : "отримати доступ"
+        link : "events/"
         animation : "zoomIn" # animation select from : https://daneden.github.io/animate.css/
 
     # slider item
-    - subtitle : "GPM Parks"
-      title : "Puissance maximale <br>avec chaque panneau"
-      content : "Nous privilégions les projets techniquement solides, respectueux de l'environnement et économiquement viables à long terme."
-      bg_image_webp : "images/slider/image5.jpg"
-      bg_image : "images/slider/image5.jpg"
+    - subtitle : "GitHub Classroom"
+      title : "Співпраця між <br>кафедрами та факультетами"
+      content : "Автоматизуй зворотний зв'язок, керуй завданнями та роби навчання динамічнішим. 
+      GitHub Classroom об'єднує студентів та викладачів усіх структурних підрозділів ТНТУ."
+      bg_image_webp : "images/slider/GitHub-teachers.webp"
+      bg_image : "images/slider/GitHub-teachers.webp"
       animation : "fadeInRight" # animation select from : https://daneden.github.io/animate.css/
       button:
         enable : true
-        label : "plus de détails"
-        link : "fr/project/"
+        label : "дізнатися більше"
+        link : "events/"
         animation : "zoomIn" # animation select from : https://daneden.github.io/animate.css/
 
 ################################## banner feature ############################
@@ -49,140 +50,119 @@ banner_feature:
   # Max use 4 item
   feature_item:
     # banner feature item loop
-    - name : "Centrales Solaires à Grande Échelle"
-      icon : "fas fa-solar-panel" # font-awesome 5 : https://fontawesome.com/icons/
-      content : "Centrales photovoltaïques de grande envergure avec une dégradation minimale."
+    - name : "Покращ свої технічні навички"
+      icon : "fas fa-graduation-cap" # font-awesome 5 : https://fontawesome.com/icons/
+      content : "Опануй сучасні практики індустрії з передовими інструментами GitHub."
 
     # banner feature item loop
-    - name : "Technologie de Suivi Solaire"
-      icon : "fas fa-compass" # font-awesome 5 : https://fontawesome.com/icons/
-      content : "Suiveurs solaires avancés à axe horizontal pour une productivité journalière optimale."
+    - name : "GitHub Copilot безкоштовно"
+      icon : "fas fa-robot" # font-awesome 5 : https://fontawesome.com/icons/
+      content : "AI-асистент для написання коду — доступний кожному студенту ТНТУ."
 
     # banner feature item loop
-    - name : "Réduction de l'Impact Environnemental"
-      icon : "fas fa-leaf" # font-awesome 5 : https://fontawesome.com/icons/
-      content : "La production d'électricité zéro émission réduit la dépendance aux énergies fossiles."
+    - name : "Співпраця у всьому кампусі"
+      icon : "fas fa-users" # font-awesome 5 : https://fontawesome.com/icons/
+      content : "Працюй над проектами разом зі студентами та викладачами всіх факультетів."
 
 
 ################################## about ####################################
 about:
   enable : true
-  subtitle : "À propos de nous"
-  title : "Ce que fait GPM Parks"
+  subtitle : "Приєднуйся до GitHub Education"
+  title : "Розблокуй пристрасть до навчання разом з GitHub"
 
-  content : "GPM Parks développe, construit, détient et exploite des centrales solaires photovoltaïques à grande échelle. Ces centrales 
-  convertissent la lumière du soleil en électricité qui est livrée soit au réseau national, soit directement aux consommateurs industriels.
+  content : "<b>GitHub Education у ТНТУ ім. І. Пулюя</b> — це твій шлях до реальних навичок розробки програмного забезпечення. 
+  Приєднуйся до тисяч освітніх закладів по всьому світу, які вже користуються безкоштовними ресурсами GitHub Education.
   <br><br>
-  Les centrales solaires de grande envergure se composent de milliers de panneaux photovoltaïques installés sur de grandes étendues de 
-  terrain, soutenus par une infrastructure électrique telle que des onduleurs, des transformateurs et des sous-stations. Ces systèmes 
-  sont conçus pour fonctionner pendant 25 à 30 ans avec une dégradation minimale.
+  <b>Що отримують студенти ТНТУ:</b><br>
+  • <b>GitHub Copilot</b> — AI-помічник для написання коду<br>
+  • <b>GitHub Codespaces</b> — хмарне середовище розробки<br>
+  • <b>GitHub Actions</b> — автоматизація CI/CD процесів<br>
+  • <b>Student Developer Pack</b> — набір з десятків безкоштовних сервісів
   <br><br>
-  GPM Parks se concentre sur des projets techniquement robustes, écologiquement responsables et économiquement viables à long terme."
+  Кафедри програмної інженерії, комп'ютерних наук, автоматизації та кібербезпеки ТНТУ вже інтегрували GitHub у навчальний процес. 
+  Долучайся до технічних спільнот нашого кампусу та розвивай свої навички разом з однодумцями!
+  <br><br>
+  <b>Офіційна GitHub-сторінка ТНТУ:</b> <a href='https://github.com/Ternopil-National-Technical-University' target='_blank'>github.com/Ternopil-National-Technical-University</a>"
 
   bg_image : "images/backgrounds/about-us-bg.png"
   bg_image_webp : "images/backgrounds/about-us-bg.webp"
-  image_webp : "images/about/image3.jpeg"
-  image : "images/about/image3.jpeg"
+  image_webp : "images/about/technical_communities.webp"
+  image : "images/about/technical_communities.jpeg"
   button:
-    enable : true;
-    label : "plus de services"
-    link : "#contacts"
+    enable : true
+    label : "зареєструватись"
+    link : "https://education.github.com/pack"
 
 ################################## funfacts ###############################
 funfacts :
   enable : true
   funfacts_item :
     # fanfacts item loop
-    - name : "Projets en cours"
-      count : "3"
-      icon : "fas fa-tasks" # font-awesome 5 : https://fontawesome.com/icons/
+    - name : "Кафедр ТНТУ в програмі"
+      count : "6"
+      icon : "fas fa-university" # font-awesome 5 : https://fontawesome.com/icons/
 
     # fanfacts item loop
-    - name : "Années d'expérience"
-      count : "10"
-      icon : "far fa-calendar-alt" # font-awesome 5 : https://fontawesome.com/icons/
+    - name : "Університетів у світі використовують GitHub"
+      count : "2000"
+      icon : "fas fa-globe" # font-awesome 5 : https://fontawesome.com/icons/
 
     # fanfacts item loop
-    - name : "Production annuelle (GWh)"
-      count : "67"
-      icon : "fas fa-bolt" # font-awesome 5 : https://fontawesome.com/icons/
+    - name : "Студентів та викладачів ТНТУ з доступом"
+      count : "350"
+      icon : "fas fa-user-graduate" # font-awesome 5 : https://fontawesome.com/icons/
 
     # fanfacts item loop
-    - name : "Surface des projets (ha)"
-      count : "72"
-      icon : "fas fa-map" # font-awesome 5 : https://fontawesome.com/icons/
+    - name : "Безкоштовних інструментів у Student Pack"
+      count : "100"
+      icon : "fas fa-tools" # font-awesome 5 : https://fontawesome.com/icons/
 
 
 ################################# feature ############################################
 feature:
   enable : true
-  subtitle : "Fabrication et Technologie"
-  title : "Technologie des Parcs Solaires"
-  image_webp : "images/about/GPM-1-2-map.jpeg"
-  image : "images/about/GPM-1-2-map.jpeg"
+  subtitle : "Можливості для студентів"
+  title : "Що дає GitHub Education студентам ТНТУ"
+  image_webp : "images/about/GitHub-education-settings-banner-background.png"
+  image : "images/about/GitHub-education-settings-banner-background.png"
   content : ""
   feature_item:
     # feature item loop
-    - name : "Équipements de pointe pour une production d'énergie propre"
-      icon : "fas fa-solar-panel" # font-awesome 5 : https://fontawesome.com/icons/
-      content : "Le parc solaire GPM 1 utilise des équipements de pointe conçus pour garantir une production d'énergie propre, fiable et 
-      performante.
+    - name : "GitHub Enterprise — безкоштовно для ТНТУ"
+      icon : "fas fa-building" # font-awesome 5 : https://fontawesome.com/icons/
+      content : "Впроваджуй GitHub Enterprise Server та Cloud у своєму навчанні для доступу до розширених інструментів.
       <br><br> 
-      - <b>Suivi Solaire :</b> Les panneaux sont montés sur des suiveurs solaires à axe horizontal alignés dans une direction Nord-Sud. 
-      Cette technologie permet aux panneaux de suivre la lumière du soleil du lever au coucher, maximisant la production d'énergie tout au long de la journée. <br>
-      - <b>Conversion d'Énergie :</b> Les panneaux photovoltaïques captent l'énergie solaire et la convertissent en électricité. Cette production 
-      est optimisée par des systèmes d'onduleurs qui assurent une transformation stable et efficace du courant.<br>
-      - <b>Intégration au Réseau :</b> L'énergie produite est transmise via des postes de transformation et des sous-stations de livraison, 
-      permettant une intégration sûre et fluide au réseau électrique national.
-      <br><br> Ce système offre un fonctionnement fluide et sécurisé, conforme aux meilleures pratiques de l'industrie, tout en fournissant de 
-      l'électricité verte au réseau."
+      - <b>GitHub Actions:</b> Налаштовуй автоматизацію збірки, тестування та деплою своїх проектів — як у реальних IT-компаніях.<br>
+      - <b>GitHub Codespaces:</b> Запускай повноцінне середовище розробки прямо в браузері за секунди. Не потрібно встановлювати нічого локально.<br>
+      - <b>GitHub Copilot:</b> AI-асистент, який допомагає писати код швидше, пропонуючи автодоповнення та цілі функції.
+      <br><br>
+      <b>Технічні спільноти ТНТУ:</b> Формуй різноманітні технічні спільноти на кампусі через систему підтримки GitHub — тренінги та менторство для твого зростання та інновацій.
+      <br><br>
+      <b>Тренінги для викладачів:</b> Підтримай своїх викладачів, допомагаючи інтегрувати Git та GitHub у їхній педагогічний інструментарій через самостійні відео-уроки та практичні завдання."
 
 
-################################# service ############################################
-service:
-  enable : false
-  subtitle : "Project Solutions"
-  title : "Service We Provide"
-  service_item:
-    # service item loop
-    - name : "GreenPower Morocco 1"
-      link : "service/gpm-1/"
-      logo : "images/service/logo-gpm-1.png"
-      image : "images/service/image3.jpeg"
-      content : "TNTU, through its subsidiary GreenPower Morocco 1 S.A., has successfully developed a 30 MWac 
-      photovoltaic park. The facility is located at Douar Daidaat, within the Hjar Ennhal commune of the Tangier-Asilah 
-      prefecture.
-      <br><br>      
-      Developed within the framework of Law 13-09 regarding renewable energies, the project represents a significant 
-      contribution to Morocco's green energy infrastructure."
+################################# events ############################################
+events:
+  enable : true
+  section: "events"
+  show_item : 3
+  button:
+    enable : true
+    label : "всі події"
+    link : "events/"
+  # event items come from "content/*/events" folder
 
-    # service item loop
-    - name : "GreenPower Morocco 2"
-      link : "service/gpm-2/"
-      logo : "images/service/logo-gpm-2.png"
-      image : "images/service/image6.jpeg"
-      content : "TNTU is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and 
-      GreenPower Morocco 4.
-      <br><br> 
-      Like their predecessor, these projects fall under the framework of Law 13-09, which governs electricity 
-      production from renewable sources and promotes the development of green energy projects in Morocco.
-      <br><br> 
-      TNTU is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and GreenPower 
-      Morocco"
-
-    # service item loop
-    - name : "GreenPower Morocco 4"
-      link : "service/gpm-4/"
-      logo : "images/service/logo-gpm-4.png"
-      image : "images/service/image7.jpg"
-      content : "TNTU is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and 
-      GreenPower Morocco 4.
-      <br><br> 
-      Like their predecessor, these projects fall under the framework of Law 13-09, which governs electricity 
-      production from renewable sources and promotes the development of green energy projects in Morocco.
-      <br><br> 
-      TNTU is currently developing two additional photovoltaic solar parks: GreenPower Morocco 2 and GreenPower 
-      Morocco"
+################################# blog ################################################
+cta:
+  enable : true
+  title : "Приєднуйся до глобальної спільноти розробників — стань частиною GitHub Education у ТНТУ!"
+  bg_image_webp : "images/backgrounds/GitHub-home.webp"
+  bg_image : "images/backgrounds/GitHub-home.jpeg"
+  button:
+    enable : true
+    label : "отримати Student Developer Pack"
+    link : "https://education.github.com/pack"
 
 
 ################################# team ##############################################
@@ -190,29 +170,8 @@ team:
   enable : false
   section: "team"
   show_item : 3
-  # team member comes from "content/*/team" folder
+    # team member comes from "content/*/team" folder
 
-################################# project ############################################
-project:
-  enable : true
-  section: "project"
-  show_item : 3
-  button:
-    enable : true
-    label : "plus de projets"
-    link : "project/"
-  # project item comes from "content/*/project" folder
-
-################################# blog ################################################
-cta:
-  enable : true
-  title : "Alimentez votre avenir avec des solutions d'énergie propre"
-  bg_image_webp : "images/backgrounds/AM_Ref_inst_02-600x600.jpg"
-  bg_image : "images/backgrounds/AM_Ref_inst_02-600x600.jpg"
-  button:
-    enable : false
-    label : "demander un devis"
-    link : "#contacts"
 
 ################################# testimonial #########################################
 testimonial:
@@ -225,7 +184,7 @@ testimonial:
       name : "Dominic Allen"
       designation : "Designer"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed eiusmod tempor incididunt ut labore dolore magna aliqua.enim ad minim veniam.quis nostrud exercitation ullamco laboris nis aliquip ex ea commodo consequat. duis aute irure dolor in reprehen."
-      
+
     # testimonial item loop
     - client_image : "images/testimonial/client-2.jpg"
       name : "Alex Pitt"
@@ -247,18 +206,19 @@ partners:
 
 
     # partners item loop
-    - partner_logo : "images/partners/partner-3.png"
-      name : "The Moroccan Agency for Investment and Export Development"
-      description : "[Visit site](https://amdie.gov.ma/)"
+    - partner_logo : ""
+      name : ""
+      description : ""
 
     # partners item loop
-    - partner_logo : "images/partners/partner-2.png"
-      name : "The U.S. International Development Finance Corporation"
-      description : "[Visit site](https://www.dfc.gov/)"
+    - partner_logo : ""
+      name : "n"
+      description : ""
+
     # partners item loop
-    - partner_logo : "images/partners/partner-1.jpg"
-      name : "Advanced Material Solutions"
-      description : "[Visit site](https://silicongases.com/polysilicon)"
+    - partner_logo : ""
+      name : ""
+      description : ""
 
 
 ################################# blog ################################################
@@ -270,82 +230,82 @@ blog:
 
 ################################# contacts ################################################
 contact:
-  enable : true
+  enable : false
   image : "images/globe.jpg"
 
   form_fields:
-  # form item
-  - id: "name"
-    label: "Nom"
-    type: input
-    input_type: text
-    placeholder: "Nom *"
-    name: "entry.1436542053"
-    maxlength: 255
-    required: true
+    # form item
+    - id: "name"
+      label: "Name"
+      type: input
+      input_type: text
+      placeholder: "Name *"
+      name: "entry.1111111111"
+      maxlength: 255
+      required: true
 
-  # form item
-  - id:  "email"
-    label: "Email"
-    type: input
-    input_type: email
-    placeholder: "Email *"
-    name: "emailAddress"
-    pattern: '^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$'
-    maxlength: 255
-    required: true
+    # form item
+    - id:  "email"
+      label: "Email"
+      type: input
+      input_type: email
+      placeholder: "Email *"
+      name: "emailAddress"
+      pattern: '^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$'
+      maxlength: 255
+      required: true
 
-  # form item
-  - id:  "confirm_email"
-    label: "Confirmez votre email"
-    type: input
-    input_type: email
-    placeholder: "Confirmez votre email *"
-    name: "entry.1404406591"
-    pattern: '^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$'
-    maxlength: 255
-    required: false
-    hidden: true
+    # form item
+    - id:  "confirm_email"
+      label: "Confirm Email"
+      type: input
+      input_type: email
+      placeholder: "Confirm Email *"
+      name: ""
+      pattern: '^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$'
+      maxlength: 255
+      required: false
+      hidden: true
 
-  # form item
-  - id:  "phone"
-    label: "Telephone"
-    type: input
-    input_type: text
-    placeholder: "Telephone"
-    name: "entry.1333006019"
-    maxlength: 15
-    required: false
+    # form item
+    - id:  "phone"
+      label: "Telephone"
+      type: input
+      input_type: text
+      placeholder: "Telephone"
+      name: ""
+      maxlength: 15
+      required: false
 
-  # form item
-  - id:  "subject"
-    label: "Sujet du message"
-    type: input
-    input_type: text
-    placeholder: "Sujet du message"
-    name: "entry.2008139399"
-    maxlength: 255
-    required: false
+    # form item
+    - id:  "subject"
+      label: "Subject"
+      type: input
+      input_type: text
+      placeholder: "Subject"
+      name: ""
+      maxlength: 255
+      required: false
 
-  # form item
-  - id:  "message"
-    label: "Votre message"
-    type: textarea
-    input_type: text
-    placeholder: "Votre message *"
-    name: "entry.1150758010"
-    maxlength: 400
-    required: true
+    # form item
+    - id:  "message"
+      label: "Message"
+      type: textarea
+      input_type: text
+      placeholder: "Your Message *"
+      name: ""
+      maxlength: 400
+      required: true
 
-  # form item
-  - id : "language"
-    label: "Langue"
-    type: select
-    input_type: text
-    placeholder: "Langue"
-    name: "entry.740536652"
-    required: false
-    hidden: true
-    default: "FR"
+    # form item
+    - id : "language"
+      label: "Language"
+      type: select
+      input_type: text
+      placeholder: "Language"
+      name: ""
+      required: false
+      hidden: true
+      default: "EN"
 
 ---
