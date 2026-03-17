@@ -7,7 +7,7 @@ description: "GitHub Campus TNTU conserve la propriété stricte de tout le cont
 
 ### **1. Conditions Générales**
 
-En accédant au site web **gp-services.ma**, exploité par **GitHub Campus TNTU** (une entité du groupe **TNTU**, **gp-maroc.ma**), vous acceptez d'être lié par les présentes Conditions d'Utilisation et toutes les lois et réglementations applicables. Si vous n'acceptez pas l'une de ces conditions, il vous est interdit d'utiliser ou d'accéder à ce site.
+En accédant au site web **GitHub Campus TNTU**, exploité par **GitHub Campus TNTU** (une entité du groupe **TNTU**, **Кафедрою програмної інженерії**), vous acceptez d'être lié par les présentes Conditions d'Utilisation et toutes les lois et réglementations applicables. Si vous n'acceptez pas l'une de ces conditions, il vous est interdit d'utiliser ou d'accéder à ce site.
 
 ### **2. Droits de Propriété Intellectuelle**
 
@@ -19,7 +19,7 @@ En accédant au site web **gp-services.ma**, exploité par **GitHub Campus TNTU*
 
 ### **3. Utilisation de Liens Externes**
 
-Le site web de **GitHub Campus TNTU** peut contenir des liens vers le hub central de **TNTU** (**gp-maroc.ma**) ou les sites d'autres entités.
+Le site web de **GitHub Campus TNTU** peut contenir des liens vers le hub central de **TNTU** (**Кафедрою програмної інженерії**) ou les sites d'autres entités.
 
 * **Redirection :** Une fois que vous quittez le site de GitHub Campus TNTU pour visiter un autre domaine, vous êtes soumis aux conditions et politiques spécifiques de cette page.
 * **Contenu Tiers :** GitHub Campus TNTU n'est pas responsable de la disponibilité ou de l'exactitude du contenu hébergé sur des sites externes liés depuis nos pages.
