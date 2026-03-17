@@ -8,6 +8,5 @@ Disallow: /private/
 Crawl-delay: 1
 
 # Sitemaps
-Sitemap: https://gp-services.ma/sitemap.xml
-Sitemap: https://gp-services.ma/en/sitemap.xml
-Sitemap: https://gp-services.ma/fr/sitemap.xml
+https://ternopil-national-technical-university.github.io/GitHub-Education/sitemap.xml
+
