@@ -9,7 +9,7 @@ bg_image_webp: "images/backgrounds/GitHub-home.webp"
 bg_image: "images/backgrounds/GitHub-home.jpg"
 # event image
 image_webp: "GitHub-student-dev-pack.png"
-image: "images/about/GitHub-sdp.jpeg"
+image: "images/aboutGitHub-student-dev-pack.png"
 # event category
 category: "Workshop"
 # event location
@@ -49,12 +49,14 @@ status: "Заплановано"
 
 ### Реєстрація
 
-Зареєструйтесь для участі заздалегідь! 
+Зареєструйтесь для участі заздалегідь! <br>
+Отримайте невеличкі сувеніри від GitHub при підтвердженні реєстрації!
 
-<a href="https://forms.gle/6nx6mAU3QYT7yBk37" class="btn btn-primary btn-lg mt-3 mb-4" style="font-size: 1.25rem; padding: 15px 40px;" target="_blank">
-  <i class="fas fa-user-plus mr-2"></i> Зареєструйтесь тут
+<a href="https://forms.gle/6nx6mAU3QYT7yBk37" class="btn btn-primary btn-lg mt-3 mb-4" style="font-size: 1.25rem; padding: 15px 40px; 
+  display: inline-flex; align-items: center; gap: 8px;" target="_blank">
+ <i class="fas fa-user-plus"></i> 
+ Зареєструйтесь тут
 </a>
-
 
 **Візьміть з собою:**
 - Ноутбук
