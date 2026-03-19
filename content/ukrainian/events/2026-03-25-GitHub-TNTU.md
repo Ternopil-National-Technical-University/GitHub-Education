@@ -49,7 +49,8 @@ status: "Заплановано"
 
 ### Реєстрація
 
-Зареєструйтесь для участі заздалегідь! 
+Зареєструйтесь для участі заздалегідь!
+Отриматей невеличні суверні від GitHub при підтверджені реєстрації!
 
 <a href="https://forms.gle/6nx6mAU3QYT7yBk37" class="btn btn-primary btn-lg mt-3 mb-4" style="font-size: 1.25rem; padding: 15px 40px;" target="_blank">
   <i class="fas fa-user-plus mr-2"></i> Зареєструйтесь тут
