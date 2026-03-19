@@ -50,12 +50,13 @@ status: "Заплановано"
 ### Реєстрація
 
 Зареєструйтесь для участі заздалегідь! <br>
-Отриматей невеличні суверні від GitHub при підтверджені реєстрації!
+Отримайте невеличкі сувеніри від GitHub при підтвердженні реєстрації!
 
-<a href="https://forms.gle/6nx6mAU3QYT7yBk37" class="btn btn-primary btn-lg mt-3 mb-4" style="font-size: 1.25rem; padding: 15px 40px;" target="_blank">
-  <i class="fas fa-user-plus mr-2"></i> Зареєструйтесь тут
+<a href="https://forms.gle/6nx6mAU3QYT7yBk37" class="btn btn-primary btn-lg mt-3 mb-4" style="font-size: 1.25rem; padding: 15px 40px; 
+  display: inline-flex; align-items: center; gap: 8px;" target="_blank">
+ <i class="fas fa-user-plus"></i> 
+ Зареєструйтесь тут
 </a>
-
 
 **Візьміть з собою:**
 - Ноутбук
