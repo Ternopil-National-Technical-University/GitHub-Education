@@ -8,8 +8,8 @@ description: "Воркшоп з GitHub Education для студентів та 
 bg_image_webp: "images/backgrounds/GitHub-home.webp"
 bg_image: "images/backgrounds/GitHub-home.jpg"
 # event image
-image_webp: "GitHub-student-dev-pack.png"
-image: "static/images/about/GitHub-student-dev-pack.png"
+image_webp: "images/about/GitHub-student-dev-pack.webp"
+image: "images/about/GitHub-student-dev-pack.png"
 # event category
 category: "Workshop"
 # event location
