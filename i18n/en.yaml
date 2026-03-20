@@ -85,5 +85,8 @@
 - id: section_team
   translation: Team
 
+- id: section_events
+  translation: Events
+
 - id: location
   translation: Location
