@@ -11,7 +11,7 @@
         {{ "<!-- breadcrumb -->" | safeHTML }}
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent p-0">
-            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="{{ site.Params.BaseURL | relLangURL }}">{{ site.Params.home }}</a></li>
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="{{ site.BaseURL | relLangURL }}">{{ site.Params.home }}</a></li>
             {{ if .Section }}
             <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="{{ .Section | relLangURL }}">{{ i18n (printf "section_%s" .Section) | default (.Section | title) }}</a></li>
             {{ end }}
