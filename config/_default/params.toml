@@ -16,7 +16,7 @@ footer_content = "GitHub Education допомагає студентам, вик
 contact_form_action = "#" # contact form works with https://formspree.io
 
 # Google Tag Manager
-gtm = "" # GTM-XXXXXXXX
+gtm = "GTM-T3L6X5GF" # GTM-XXXXXXXX RS
 
 # Global date parameters
 year = 2026
