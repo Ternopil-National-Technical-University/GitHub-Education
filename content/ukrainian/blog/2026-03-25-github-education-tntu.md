@@ -3,8 +3,8 @@ title: "Підсумки: GitHub Education Workshop ТНТУ"
 date: 2026-03-27T10:47:55+06:00
 description: "Підсумки воркшопу з GitHub Education для студентів та викладачів ТНТУ ім. І. Пулюя"
 bg_image_webp: "images/backgrounds/GitHub-home.webp"
-bg_image: "images/backgrounds/GitHub-home.jpg"
-image_webp: "images/about/GitHub-student-dev-pack.webp"
+bg_image: "images/backgrounds/GitHub-home.jpeg"
+image_webp: "images/about/GitHub-student-dev-pack.png"
 image: "images/about/GitHub-student-dev-pack.png"
 author: "GitHub Education TNTU"
 categories: ["Workshop"]
@@ -43,6 +43,12 @@ tags: ["GitHub-Education", "Student-Developer-Pack", "ТНТУ"]
 
 ---
 
-## Корисні ресурси для студентів
+## Корисні ресурси для здобувачів та викладачів
 
-
+- [GitHub Foundations Part 1 of 2](https://learn.microsoft.com/en-us/training/paths/github-foundations/)
+- [GitHub Copilot Fundamentals Part 1 of 2](https://learn.microsoft.com/en-us/training/paths/copilot/)
+- [Tips for building with GitHub Copilot](https://github.com/features/copilot/tutorials)
+- [Pro Git book](https://git-scm.com/book/en/v2)
+- [ПОВНИЙ КУРС по GIT та GITHUB українською 2025](https://www.youtube.com/watch?v=9CnZihyYjjA&list=PLOqdtZ4t1z9Q7_ViudJDOIrqlroY972qM)
+- [Run code generation in the background with GitHub Copilot coding agents | GitHub Checkout](https://www.youtube.com/watch?v=S1ch_6fjp5M)
+- [GitHub Education](https://github.com/education)
