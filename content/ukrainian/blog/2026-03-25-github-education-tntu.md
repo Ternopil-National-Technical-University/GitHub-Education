@@ -28,10 +28,7 @@ tags: ["GitHub Education", "Student Developer Pack", "ТНТУ"]
 
 ## Фото з події
 
-{{< gallery >}}
-<!-- Додайте фото з події сюди -->
-<!-- {{< figure src="/images/blog/workshop-1.jpg" alt="Фото з воркшопу" >}} -->
-{{< /gallery >}}
+
 
 ---
 

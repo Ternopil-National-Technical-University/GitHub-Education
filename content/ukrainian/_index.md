@@ -163,7 +163,6 @@ events:
     link : "events/"
   # event items come from "content/*/events" folder
 
-################################# blog ################################################
 cta:
   enable : true
   title : "Приєднуйся до глобальної спільноти розробників — стань частиною GitHub Education у ТНТУ!"

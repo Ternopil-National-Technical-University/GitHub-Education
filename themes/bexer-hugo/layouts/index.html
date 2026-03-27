@@ -189,6 +189,38 @@
 {{end}}
 {{ "<!-- /case study -->" | safeHTML }}
 
+{{ "<!-- blog -->" | safeHTML }}
+{{$show_item:= .Params.blog.show_item}}
+{{ if .Params.blog.enable }}
+{{ with site.GetPage (string .Params.blog.section) }}
+<section class="section bg-gray-white position-relative">
+  <div class="container" style="max-width: 1400px;">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title-border mx-auto"></div>
+        <h4 class="section-title-sm">{{ .Params.subtitle | markdownify }}</h4>
+        <h2 class="section-title">{{ .Params.title }}</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      {{ "<!-- blog post -->" | safeHTML }}
+      {{ range first ($show_item | default 3) .Data.Pages }}
+      <article class="col-lg-5 col-md-6 mb-lg-0 mb-4 zindex-1">
+        {{ .Render "post" }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+  {{ "<!-- background shapes -->" | safeHTML }}
+  <img loading="lazy" class="img-fluid blog-shape-left" src="{{`images/backgrounds/blog-bg-left.webp` | relURL }}"
+    alt="" onerror="this.src='{{`images/backgrounds/blog-bg-left.png` | relURL }}'">
+  <img loading="lazy" class="img-fluid blog-shape-right" src="{{`images/backgrounds/blog-bg-right.webp` | relURL }}"
+    alt="" onerror="this.src='{{`images/backgrounds/blog-bg-right.png` | relURL }}'">
+</section>
+{{ end }}
+{{ end }}
+{{ "<!-- /blog -->" | safeHTML }}
+
 {{ "<!-- events section -->" | safeHTML }}
 {{ if .Params.events.enable}}
 <section class="section pt-0" id="events">
@@ -259,38 +291,6 @@
 {{ if .Params.partners.enable }}
 {{ partial "partners.html" . }}
 {{ end }}
-
-{{ "<!-- blog -->" | safeHTML }}
-{{$show_item:= .Params.service.show_item}}
-{{ if .Params.blog.enable }}
-{{ with site.GetPage (string .Params.blog.section) }}
-<section class="section bg-gray-white position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <div class="section-title-border mx-auto"></div>
-        <h4 class="section-title-sm">{{ .Params.subtitle | markdownify }}</h4>
-        <h2 class="section-title">{{ .Params.title }}</h2>
-      </div>
-    </div>
-    <div class="row">
-      {{ "<!-- blog post -->" | safeHTML }}
-      {{ range first ($show_item | default 3) .Data.Pages }}
-      <article class="col-lg-4 col-sm-6 mb-lg-0 mb-4 zindex-1">
-        {{ .Render "post" }}
-      </article>
-      {{ end }}
-    </div>
-  </div>
-  {{ "<!-- background shapes -->" | safeHTML }}
-  <img loading="lazy" class="img-fluid blog-shape-left" src="{{`images/backgrounds/blog-bg-left.webp` | relURL }}"
-    alt="" onerror="this.src='{{`images/backgrounds/blog-bg-left.png` | relURL }}'">
-  <img loading="lazy" class="img-fluid blog-shape-right" src="{{`images/backgrounds/blog-bg-right.webp` | relURL }}"
-    alt="" onerror="this.src='{{`images/backgrounds/blog-bg-right.png` | relURL }}'">
-</section>
-{{ end }}
-{{ end }}
-{{ "<!-- /blog -->" | safeHTML }}
 
 {{ with .Params.contact }}
 {{ if .enable }}
