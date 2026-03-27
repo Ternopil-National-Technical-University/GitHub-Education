@@ -30,10 +30,10 @@ tags: ["GitHub-Education", "Student-Developer-Pack", "ТНТУ"]
 
 <div class="row justify-content-center">
   <div class="col-lg-10 mb-4">
-    <img loading="lazy" class="img-fluid rounded w-100" src="/images/blog/2026-03-25-github-education-tntu/20260325_150246.jpg" alt="GitHub Education Workshop ТНТУ">
+    <img loading="lazy" class="img-fluid rounded w-100" src="images/blog/2026-03-25-github-education-tntu/20260325_150246.jpg" alt="GitHub Education Workshop ТНТУ">
   </div>
   <div class="col-lg-10 mb-4">
-    <img loading="lazy" class="img-fluid rounded w-100" src="/images/blog/2026-03-25-github-education-tntu/IMG_6849.jpg" alt="Учасники воркшопу GitHub Education">
+    <img loading="lazy" class="img-fluid rounded w-100" src="images/blog/2026-03-25-github-education-tntu/IMG_6849.jpg" alt="Учасники воркшопу GitHub Education">
   </div>
 </div>
 
