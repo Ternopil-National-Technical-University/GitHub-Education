@@ -87,8 +87,7 @@ about:
   
   bg_image : "images/backgrounds/about-us-bg.png"
   bg_image_webp : "images/backgrounds/about-us-bg.webp"
-  image_webp : "images/about/technical_communities.webp"
-  image : "images/about/technical_communities.jpeg"
+  video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAthB-ZZF6s?si=Bphmvi-7yp82LOPq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
   button:
     enable : true
     label : "зареєструватись"
@@ -142,6 +141,17 @@ feature:
       <b>Тренінги для викладачів:</b> Підтримай своїх викладачів, допомагаючи інтегрувати Git та GitHub у їхній педагогічний інструментарій через самостійні відео-уроки та практичні завдання."
      
       
+################################# blog ############################################
+blog:
+  enable : true
+  section: "blog"
+  show_item : 3
+  button:
+    enable : true
+    label : "всі публікації"
+    link : "blog/"
+  # blog items come from "content/*/blog" folder
+
 ################################# events ############################################
 events:
   enable : true
@@ -153,7 +163,6 @@ events:
     link : "events/"
   # event items come from "content/*/events" folder
 
-################################# blog ################################################
 cta:
   enable : true
   title : "Приєднуйся до глобальної спільноти розробників — стань частиною GitHub Education у ТНТУ!"

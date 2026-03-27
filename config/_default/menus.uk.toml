@@ -12,19 +12,26 @@ url = "#about"
 weight = 2
 
 [[main]]
+name = "Блог"
+url = "blog/"
+weight = 3
+identifier = "section_blog"
+
+[[main]]
 name = "Події"
 url = "events/"
-weight = 3
+weight = 4
+identifier = "section_events"
 
 [[main]]
 name = "Контакти"
-url = "#contacts"
-weight = 4
+url = "#footer"
+weight = 5
 
 [[main]]
 name = "ТНТУ"
 url = "https://tntu.edu.ua/"
-weight = 5
+weight = 6
 
 # footer menu
 [[footer_menu]]

@@ -5,16 +5,18 @@ logo_footer = "images/logo.png"
 favicon = "images/favicon.png"
 page_sharing_image = "images/backgrounds/schools-GitHub-Education-sharing.jpeg"
 # top header
-top_header = false
+top_header = true
 # Meta data
-description = "GitHub Campus TNTU"
-author = "GitHub Campus TNTU"
+description = "GitHub Education TNTU"
+author = "GitHub Education TNTU"
+# Footer content
+footer_content = "GitHub Education допомагає студентам, викладачам та школам отримати доступ до інструментів та ресурсів для навчання та розвитку."
 
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 
 # Google Tag Manager
-gtm = "" # GTM-XXXXXXXX
+gtm = "GTM-T3L6X5GF" # GTM-XXXXXXXX RS
 
 # Global date parameters
 year = 2026
@@ -57,16 +59,20 @@ map_marker = "images/marker.png"
 map_marker_name = "Bexer"
 
 ########################### social icon ############################
-#[[social]]
-#icon = "fab fa-facebook"
-#link = "https://facebook.com/"
-#
-#[[social]]
-#icon = "fab fa-twitter"
-#link = "https://twitter.com/"
-#
-#[[social]]
-#icon = "fab fa-instagram"
-#link = "https://instagram.com/"
+[[social]]
+icon = "fab fa-github"
+link = "https://github.com/Ternopil-National-Technical-University"
+
+[[social]]
+icon = "fab fa-facebook"
+link = "https://www.facebook.com/tntu.ip/"
+
+[[social]]
+icon = "fab fa-instagram"
+link = "https://www.instagram.com/tntu.edu.ua/"
+
+[[social]]
+icon = "fab fa-youtube"
+link = "https://www.youtube.com/c/%D0%A2%D0%9D%D0%A2%D0%A3%D1%96%D0%BC%D0%86%D0%B2%D0%B0%D0%BD%D0%B0%D0%9F%D1%83%D0%BB%D1%8E%D1%8F"
 
 

@@ -17,8 +17,12 @@
         {{ "<!-- mail and phone -->" | safeHTML }}
         <div class="col-lg-6 col-md-6 text-md-right text-center">
           <ul class="list-inline">
-            <li class="list-inline-item mx-0 border-right border-secondary"><a class="text-white d-inline-block px-lg-3 px-2 py-1 py-md-0" href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+            {{ if site.Params.email }}
+            <li class="list-inline-item mx-0"><a class="text-white d-inline-block px-lg-3 px-2 py-1 py-md-0" href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+            {{ end }}
+            {{ if site.Params.mobile }}
             <li class="list-inline-item mx-0"><a class="text-white d-inline-block px-lg-3 px-2 py-1 py-md-0" href="tel:{{ site.Params.mobile }}">{{ i18n "call_now" }}: <span class="text-primary">{{ site.Params.mobile }}</span></a></li>
+            {{ end }}
           </ul>
         </div>
       </div>

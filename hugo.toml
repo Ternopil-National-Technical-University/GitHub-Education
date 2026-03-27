@@ -20,9 +20,9 @@ light = "#f5f6fa"
 # font variable
 # Give your font name from google font. add font weight using ":wght@" and separate by ";"
 # example: "Open Sans:wght@400;500;600"
-primary_font = "Open Sans:wght@300;400;600;700"
+primary_font = "Inter:wght@300;400;500;600;700"
 primary_font_type = "sans-serif"                             # [serif/sans-serif]
-secondary_font = "Barlow Condensed:wght@300;400;500;600;700"
+secondary_font = "Inter:wght@600;700;800"
 secondary_font_type = "sans-serif"                           # [serif/sans-serif]
 icon_font = "Font Awesome 5 Free"
 

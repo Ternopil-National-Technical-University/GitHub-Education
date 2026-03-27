@@ -6,16 +6,16 @@ event_date: "25 березня 2026, 14:30 – 15:45"
 description: "Воркшоп з GitHub Education для студентів та викладачів ТНТУ ім. І. Пулюя"
 # page title background image
 bg_image_webp: "images/backgrounds/GitHub-home.webp"
-bg_image: "images/backgrounds/GitHub-home.jpg"
+bg_image: "images/backgrounds/GitHub-home.jpeg"
 # event image
-image_webp: "images/about/GitHub-student-dev-pack.webp"
+image_webp: "images/about/GitHub-student-dev-pack.png"
 image: "images/about/GitHub-student-dev-pack.png"
 # event category
 category: "Workshop"
 # event location
 location: "Читальний зал ТНТУ №2, ауд. 58"
 # event status
-status: "Заплановано"
+status: "Завершено"
 ---
 
 ## Про подію
