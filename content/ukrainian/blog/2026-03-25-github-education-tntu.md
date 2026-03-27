@@ -28,14 +28,21 @@ tags: ["GitHub Education", "Student Developer Pack", "ТНТУ"]
 
 ## Фото з події
 
+<div class="row justify-content-center">
+  <div class="col-lg-10 mb-4">
+    <img loading="lazy" class="img-fluid rounded w-100" src="/images/blog/2026-03-25-github-education-tntu/20260325_150246.jpg" alt="GitHub Education Workshop ТНТУ">
+  </div>
+  <div class="col-lg-10 mb-4">
+    <img loading="lazy" class="img-fluid rounded w-100" src="/images/blog/2026-03-25-github-education-tntu/IMG_6849.jpg" alt="Учасники воркшопу GitHub Education">
+  </div>
+</div>
 
+<div class="text-center mt-4">
+  <a href="https://photos.app.goo.gl/myYN8pb5SwFGF5zp9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Переглянути всі фото</a>
+</div>
 
 ---
 
-## Відео
+## Корисні ресурси для студентів
 
-<div class="video-wrapper">
-  <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/oAthB-ZZF6s?si=Bphmvi-7yp82LOPq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-</div>
+
