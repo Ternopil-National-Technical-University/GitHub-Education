@@ -13,7 +13,7 @@ weight = 2
 
 [[main]]
 name = "Блог"
-url = "#blog"
+url = "blog/"
 weight = 3
 identifier = "section_blog"
 
