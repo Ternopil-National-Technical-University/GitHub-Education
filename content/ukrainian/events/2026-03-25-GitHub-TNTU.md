@@ -15,7 +15,7 @@ category: "Workshop"
 # event location
 location: "Читальний зал ТНТУ №2, ауд. 58"
 # event status
-status: "Заплановано"
+status: "Завершено"
 ---
 
 ## Про подію
