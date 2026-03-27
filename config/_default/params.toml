@@ -9,6 +9,8 @@ top_header = false
 # Meta data
 description = "GitHub Campus TNTU"
 author = "GitHub Campus TNTU"
+# Footer content
+footer_content = "GitHub Education допомагає студентам, викладачам та школам отримати доступ до інструментів та ресурсів для навчання та розвитку."
 
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
@@ -57,16 +59,20 @@ map_marker = "images/marker.png"
 map_marker_name = "Bexer"
 
 ########################### social icon ############################
-#[[social]]
-#icon = "fab fa-facebook"
-#link = "https://facebook.com/"
-#
-#[[social]]
-#icon = "fab fa-twitter"
-#link = "https://twitter.com/"
-#
-#[[social]]
-#icon = "fab fa-instagram"
-#link = "https://instagram.com/"
+[[social]]
+icon = "fab fa-github"
+link = "https://github.com/Ternopil-National-Technical-University"
+
+[[social]]
+icon = "fab fa-facebook"
+link = "https://facebook.com/tntu.edu.ua"
+
+[[social]]
+icon = "fab fa-instagram"
+link = "https://instagram.com/tntu_official"
+
+[[social]]
+icon = "fab fa-youtube"
+link = "https://www.youtube.com/@TernopilskyiNatsionalnyi"
 
 
