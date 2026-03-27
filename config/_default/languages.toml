@@ -12,7 +12,7 @@ keywords = ["GitHub Campus TNTU","GitHub Copilot TNTU", "Програмна Ін
 
 # contact info
 address = "Тернопільський національний технічний університет імені Івана Пулюя, 56, вул. Руська, Кабінет № 1-104, Тернопіль 46001 Україна"
-email = "github-education@tntu.edu.ua"
+email = "github-education [at] tntu.edu.ua"
 
 # cookie consent content
 consent_manage = 'Керувати налаштуваннями'
@@ -45,7 +45,7 @@ keywords = ["GitHub Campus TNTU","GitHub Copilot TNTU", "Software Engineering", 
 
 # contact info
 address = "Ternopil Ivan Puluj National Technical University, 56, Ruska Street, Office No. 1-104, Ternopil 46001 Ukraine"
-email = "github-education@tntu.edu.ua"
+email = "github-education [at] tntu.edu.ua"
 
 # cookie consent content
 consent_manage = 'Manage preferences'
@@ -78,7 +78,7 @@ keywords = ["GitHub Campus TNTU","GitHub Copilot TNTU", "Génie Logiciel", "", "
 
 # contact info
 address = "Université Nationale Technique Ivan Puluj de Ternopil, 56, rue Ruska, Bureau No. 1-104, Ternopil 46001 Ukraine"
-email = "github-education@tntu.edu.ua"
+email = "github-education [at] tntu.edu.ua"
 
 # cookie consent content
 consent_manage = 'Gérer les préférences'
