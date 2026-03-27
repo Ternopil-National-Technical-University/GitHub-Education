@@ -87,8 +87,7 @@ about:
   
   bg_image : "images/backgrounds/about-us-bg.png"
   bg_image_webp : "images/backgrounds/about-us-bg.webp"
-  image_webp : "images/about/technical_communities.webp"
-  image : "images/about/technical_communities.jpeg"
+  video : '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAthB-ZZF6s?si=Bphmvi-7yp82LOPq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
   button:
     enable : true
     label : "зареєструватись"

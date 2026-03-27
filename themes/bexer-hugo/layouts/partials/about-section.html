@@ -1,6 +1,27 @@
 {{ with .Params.about }}
 <div class="container">
-  <div class="row justify-content-between align-items-center">
+  <div class="row justify-content-between align-items-start">
+    {{ if .video }}
+    <div class="col-lg-12">
+      <div class="section-title-border"></div>
+      <p class="section-title-sm h6">{{ .subtitle | markdownify }}</p>
+      <h2 class="section-title">{{ .title | markdownify }}</h2>
+      <p class="mb-5">{{ .content | markdownify }}</p>
+      {{ if .button.enable }}
+      {{ with .button }}
+      <a href="{{ .link | absLangURL }}" class="btn btn-primary hover-ripple">{{ .label }}</a>
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="col-lg-12 mt-5">
+      {{ "<!-- about us video --> " | safeHTML }}
+      <div class="video-wrapper">
+        <div class="video-container">
+          {{ .video | safeHTML }}
+        </div>
+      </div>
+    </div>
+    {{ else }}
     <div class="col-md-5 bg-contain mb-5 mb-lg-0" data-background="{{ .bg_image_webp | absURL }}">
       <!-- this image is for trigger this section fallback background image -->
       <img class="d-none about-img-rounded-shadow" src="{{ .bg_image_webp | absURL }}"
@@ -21,6 +42,7 @@
       {{ end }}
       {{ end }}
     </div>
+    {{ end }}
   </div>
 </div>
 {{ end }}
