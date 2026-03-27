@@ -8,7 +8,7 @@ image_webp: "images/about/GitHub-student-dev-pack.webp"
 image: "images/about/GitHub-student-dev-pack.png"
 author: "GitHub Education TNTU"
 categories: ["Workshop"]
-tags: ["GitHub Education", "Student Developer Pack", "ТНТУ"]
+tags: ["GitHub-Education", "Student-Developer-Pack", "ТНТУ"]
 ---
 
 ## Воркшоп успішно завершено!

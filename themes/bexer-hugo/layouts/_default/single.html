@@ -24,8 +24,8 @@
         <div class="mb-3">
           <h5 class="d-inline-block mr-3">Tags:</h5>
           <ul class="list-inline d-inline-block">
-            {{ range .Params.Tags }}
-            <li class="list-inline-item"><a class="text-color" href="{{ `tags/` | absURL }}{{ . | lower }}">{{ . }}</a>,</li>
+            {{ range .GetTerms "tags" }}
+            <li class="list-inline-item"><a class="text-color" href="{{ .Permalink }}">{{ .LinkTitle }}</a>,</li>
             {{ end }}
           </ul>
         </div>
